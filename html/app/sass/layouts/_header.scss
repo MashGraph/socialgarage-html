@@ -1,0 +1,31 @@
+header {
+  .navbar {
+    background-color: $nav-bg-color;
+    min-height: 60px;
+    margin-bottom: 0;
+  }
+
+  .navbar-search {
+    form {
+      padding: 20px 0;
+    }
+  }
+
+  .navbar-nav {
+    &.main-nav {
+      padding-left: 80px;
+
+      a {
+        font-size: 32px;
+        margin-right: 40px;
+      }
+    }
+
+    li {
+      a {
+        line-height: 60px;
+        color: #fff !important;
+      }
+    }
+  }
+}
