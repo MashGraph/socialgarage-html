@@ -2,4 +2,78 @@ html,
 body {
   height: 100%;
   margin: 0px;
+  padding-top: 55px;
+  font-family: 'Helvetica-Regular';
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.widgets {
+  border: thin #d1d1d1 solid;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+
+  .widget-header {
+    position: relative;
+  }
+
+  .widget-option {
+    @include centerer(false, true);
+
+    color: #d6d6d6;
+    right: -5px;
+    font-size: 26px;
+  }
+
+  .list-content {
+    h3 {
+      margin: 0;
+      font-size: 20px;
+      color: $nav-bg-color;
+
+      span {
+        padding-left: 15px;
+        color: $site-blue;
+      }
+    }
+  }
+}
+
+.rank-list {
+  li {
+    margin-bottom: 25px;
+  }
+}
+
+.delete-follow {
+  right: 15px;
+  position: absolute;
+  color: #d8d8d8;
+  z-index: 999;
+  font-size: 16px;
+}
+
+.btn {
+  font-family: 'Helvetica-regular';
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border: none;
+  padding: 10px 20px;
+  background-color: $site-blue;
+
+  i {
+    font-size: 30px;
+    vertical-align: middle;
+  }
+
+  span {
+    padding-left: 8px;
+  }
 }

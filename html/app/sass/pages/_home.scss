@@ -1,0 +1,46 @@
+.user-details {
+  .user-cover-photo {
+    min-height: 280px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .user-thumbnail-content {
+    @include centerer(true, false);
+
+    color: #fff;
+    top: 30px;
+    text-align: center;
+
+    .thumbnail {
+      width: 128px;
+      margin: 0 auto;
+    }
+
+    .username {
+      font-size: 30px;
+      margin: 0;
+      font-family: 'Helvetica-Bold';
+    }
+  }
+
+  .user-counts {
+    background-color: $nav-bg-color;
+
+    .nav {
+      li {
+        padding: 8px 15px;
+        text-align: center;
+
+        h2 {
+          color: $site-blue;
+        }
+
+        p {
+          color: #fff;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

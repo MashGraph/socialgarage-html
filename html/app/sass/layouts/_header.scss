@@ -6,12 +6,38 @@ header {
   }
 
   .navbar-search {
+    margin-left: 40px;
+
     form {
       padding: 20px 0;
+
+      i {
+        font-size: 20px;
+        color: #969696;
+      }
+
+      input {
+        border-radius: 0;
+        background-color: transparent;
+        color: #969696;
+        border: none;
+      }
+
+      input {
+        box-shadow: none;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
     }
   }
 
   .navbar-nav {
+    a {
+      font-size: 24px;
+    }
+
     &.main-nav {
       padding-left: 80px;
 
