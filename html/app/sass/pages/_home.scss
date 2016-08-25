@@ -44,3 +44,67 @@
     }
   }
 }
+
+.user-ranks {
+  .rank-list {
+    padding-top: 20px;
+  }
+
+  .badge {
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    padding: 3px 6px;
+    background-color: $site-blue;
+  }
+
+  .btn-follow {
+    margin-top: 20px;
+  }
+
+  .view-all {
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.site-terms {
+  text-align: center;
+  padding: 10px;
+
+  ul {
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+.user-feed {
+  margin-top: 0;
+  padding-top: 0;
+
+  .post-area {
+    border-bottom: thin #d1d1d1 solid;
+
+    .btn-post {
+      @include centerer(false, true);
+
+      right: 40px;
+      height: 40px;
+      padding: 3px 20px;
+      line-height: 40px;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    resize: none;
+    background-color: transparent;
+    padding: 0 15px;
+    outline: none;
+    border: none;
+    height: 50px;
+    line-height: 50px;
+  }
+}

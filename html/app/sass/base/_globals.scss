@@ -6,6 +6,10 @@ body {
   font-family: 'Helvetica-Regular';
 }
 
+div, section {
+  position: relative;
+}
+
 ul {
   padding: 0;
   list-style-type: none;
