@@ -6,6 +6,10 @@ body {
   font-family: 'Helvetica-Regular';
 }
 
+.unpadded {
+  padding: 0 !important;
+}
+
 div, section {
   position: relative;
 }
@@ -79,5 +83,11 @@ ul {
 
   span {
     padding-left: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1366px;
   }
 }
