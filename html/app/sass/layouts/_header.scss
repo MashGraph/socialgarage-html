@@ -5,8 +5,16 @@ header {
     margin-bottom: 0;
   }
 
+  .navbar-brand {
+    @media screen and (max-width: 767px) {
+      width: 60px;
+    }
+  }
+
   .navbar-search {
-    margin-left: 40px;
+    @media screen and (min-width: 1200px) {
+      margin-left: 40px;
+    }
 
     form {
       padding: 20px 0;
@@ -39,7 +47,13 @@ header {
     }
 
     &.main-nav {
-      padding-left: 80px;
+      @media screen and (min-width: 1200px) {
+        padding-left: 65px !important;
+      }
+
+      @media screen and (min-width: 768px) {
+        padding-left: 20px;
+      }
 
       a {
         font-size: 32px;
