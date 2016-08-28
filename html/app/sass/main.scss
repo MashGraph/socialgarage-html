@@ -37,7 +37,9 @@ $icon-font-path: '../fonts/';
 /*-----GLOBALS--------
 --------------------------*/
 @import 'base/globals';
+@import 'base/socials';
 
 /*-----PAGES-------
 -----------------------*/
 @import 'pages/home';
+@import 'pages/login';
