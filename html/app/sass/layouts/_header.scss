@@ -1,0 +1,71 @@
+header {
+  .navbar {
+    background-color: $nav-bg-color;
+    min-height: 60px;
+    margin-bottom: 0;
+  }
+
+  .navbar-brand {
+    @media screen and (max-width: 767px) {
+      width: 60px;
+    }
+  }
+
+  .navbar-search {
+    @media screen and (min-width: 1200px) {
+      margin-left: 40px;
+    }
+
+    form {
+      padding: 20px 0;
+
+      i {
+        font-size: 20px;
+        color: #969696;
+      }
+
+      input {
+        border-radius: 0;
+        background-color: transparent;
+        color: #969696;
+        border: none;
+      }
+
+      input {
+        box-shadow: none;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  .navbar-nav {
+    a {
+      font-size: 24px;
+    }
+
+    &.main-nav {
+      @media screen and (min-width: 1200px) {
+        padding-left: 65px !important;
+      }
+
+      @media screen and (min-width: 768px) {
+        padding-left: 20px;
+      }
+
+      a {
+        font-size: 32px;
+        margin-right: 40px;
+      }
+    }
+
+    li {
+      a {
+        line-height: 60px;
+        color: #fff !important;
+      }
+    }
+  }
+}

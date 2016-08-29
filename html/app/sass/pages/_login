@@ -1,0 +1,54 @@
+.login-wrapper{
+  .login-content{
+    float:none;
+    margin:0 auto;
+  }
+  .login-logo{
+    text-align:center;
+
+    img{
+      display:inline-block;
+    }
+  }
+  .social-login{
+    text-align:center;
+    padding-top:40px;
+    .btn-social{
+      padding-top:20px;
+      text-align:center;
+      font-size:18px;
+      .fa{
+        padding-top:5px;
+        border-right:rgba(248,248,248, 0.1) thin solid;
+        width:55px;
+      }
+}
+
+
+    span{
+      &.title-header{
+        text-transform: uppercase;
+        color:#666;
+      }
+    }
+  }
+}
+
+.email-login{
+  input{
+    padding:25px;
+    font-size:18px;
+  }
+  padding-top:60px;
+}
+.terms{
+  margin-top:30px;
+  ul{
+    li{
+      display:inline-block;
+      a{
+        text-transform:uppercase;
+      }
+    }
+  }
+}

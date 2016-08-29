@@ -1,0 +1,271 @@
+.user-details {
+  .user-cover-photo {
+    min-height: 280px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .user-thumbnail-content {
+    @include centerer(true, false);
+
+    color: #fff;
+    top: 30px;
+    text-align: center;
+
+    .thumbnail {
+      width: 128px;
+
+      img {
+        height: 128px;
+      }
+
+      margin: 0 auto;
+    }
+
+    .username {
+      font-size: 30px;
+      margin: 0;
+      font-family: 'Helvetica-Bold';
+    }
+  }
+
+  .user-counts {
+    background-color: $nav-bg-color;
+
+    .nav {
+      li {
+        padding: 8px 15px;
+        text-align: center;
+
+        h2 {
+          color: $site-blue;
+        }
+
+        p {
+          color: #fff;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+.user-ranks {
+  .ranked-photo {
+    img {
+      height: 88px;
+    }
+  }
+
+  .rank-list {
+    padding-top: 20px;
+  }
+
+  .badge {
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    padding: 3px 6px;
+    background-color: $site-blue;
+  }
+
+  .btn-follow {
+    margin-top: 20px;
+  }
+
+  .view-all {
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.site-terms {
+  text-align: center;
+  padding: 10px;
+
+  ul {
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+.user-feed {
+  margin-top: 0;
+  padding-top: 0;
+
+  .post-area {
+    border-bottom: #d1d1d1 thin solid;
+
+    .btn-post {
+      @include centerer(false, true);
+
+      right: 40px;
+      height: 40px;
+      padding: 3px 20px;
+      line-height: 40px;
+    }
+  }
+
+  textarea {
+    width: 80%;
+    resize: none;
+    background-color: transparent;
+    padding: 15px;
+    outline: none;
+    border: none;
+    height: 50px;
+    overflow: hidden;
+  }
+}
+
+.post-item {
+  border-bottom: thin #d1d1d1 solid;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .post-author-photo {}
+
+  .post-item-content {
+    padding: 15px 10px;
+
+    .post-message {
+      h3 {
+        margin: 0;
+
+        span {
+          padding-left: 15px;
+          color: $site-blue;
+        }
+      }
+
+      .post-author {
+        padding-bottom: 10px;
+
+        @media screen and (max-width: 767px) {
+          padding: 15px;
+        }
+
+        h3 {
+          span {
+            padding: 0;
+            font-size: 16px;
+          }
+        }
+
+        .timestamp {
+          position: absolute;
+
+          @media screen and (max-width: 767px) {
+            position: relative;
+          }
+
+          top: 0;
+          right: 0;
+          color: #b3b3b3;
+          font-size: 12px;
+          font-style: italic;
+        }
+      }
+    }
+  }
+
+  .user-reactions {
+    margin-top: 15px;
+    border-bottom: #d1d1d1 thin solid;
+
+    ul {
+      li {
+        display: inline-block;
+        margin: 0 8px;
+      }
+    }
+  }
+
+  .comment-list {
+    .author {
+      color: $site-blue;
+    }
+
+    .comment-item {
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      .commenter-photo {
+        @media screen and (max-width: 767px) {
+          padding: 0;
+        }
+      }
+
+      .comment-content {
+        @media screen and (max-width: 767px) {
+          padding: 10px 0;
+        }
+      }
+    }
+
+    .comment-reactions {
+      ul {
+        li {
+          display: inline-block;
+          margin-right: 10px;
+          margin-top: 10px;
+        }
+      }
+
+      padding-bottom: 15px;
+    }
+
+    .comment-replies {
+      padding-left: 25px;
+      padding-top: 10px;
+
+      .comment-replies-reply {
+        background-color: red;
+      }
+    }
+
+    .reply-list {
+      li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.reply-box {
+  padding-top: 10px;
+
+  .commenter-photo {
+    @media screen and (max-width: 767px) {
+      padding: 0;
+    }
+  }
+
+  &.comment-box {
+    .commenter-content {
+      @media screen and (max-width: 767px) {
+        padding: 0;
+      }
+
+      textarea {}
+    }
+  }
+
+  textarea {
+    border: #d1d1d1 thin solid;
+    width: 100%;
+    padding: 5px 10px;
+    height: 30px;
+    margin-top: 5px;
+  }
+}
+
+.comment-replies-list {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
