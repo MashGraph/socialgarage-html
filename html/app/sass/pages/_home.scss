@@ -28,23 +28,23 @@
       font-family: 'Helvetica-Bold';
     }
   }
+}
 
-  .user-counts {
-    background-color: $nav-bg-color;
+.user-counts {
+  background-color: $nav-bg-color;
 
-    .nav {
-      li {
-        padding: 8px 15px;
-        text-align: center;
+  .nav {
+    li {
+      padding: 8px 15px;
+      text-align: center;
 
-        h2 {
-          color: $site-blue;
-        }
+      h2 {
+        color: $site-blue;
+      }
 
-        p {
-          color: #fff;
-          text-transform: uppercase;
-        }
+      p {
+        color: #fff;
+        text-transform: uppercase;
       }
     }
   }
