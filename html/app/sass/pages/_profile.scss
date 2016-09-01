@@ -1,0 +1,33 @@
+.profile-banner {
+  min-height: 520px;
+  margin-top: -20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.user-banner-cover {
+  width: 230px;
+
+  @include centerer(true, true);
+
+  .cover-name {
+    text-align: center;
+    color: #fff;
+
+    h2 {
+      margin: 0;
+    }
+  }
+}
+
+.profile-section {
+  margin-top: 20px;
+}
+
+.user-profile-photos {
+  margin-top: 0;
+}
+
+.photo-item {
+  padding: 0;
+}
