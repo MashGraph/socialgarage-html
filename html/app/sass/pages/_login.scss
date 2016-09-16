@@ -17,9 +17,15 @@
     padding-top: 40px;
 
     .btn-social {
-      padding-top: 20px;
+      padding-top: 15px;
       text-align: center;
       font-size: 18px;
+
+      @media screen and (max-width: 767px) {
+        padding: 10px 0  5px;
+        text-align: center;
+        font-size: 14px;
+      }
 
       .fa {
         padding-top: 5px;
@@ -44,6 +50,17 @@
   }
 
   padding-top: 60px;
+
+  .btn {
+    height: 42px;
+    line-height: 35px;
+
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+      height: 32px;
+      line-height: 25px;
+    }
+  }
 }
 
 .terms {

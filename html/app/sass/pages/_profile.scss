@@ -3,6 +3,20 @@
   margin-top: -20px;
   background-size: cover;
   background-repeat: no-repeat;
+
+  &.wide-profile {
+    @media screen and (min-width: 1200px) {
+      width: 82%;
+    }
+  }
+}
+
+.user-counts {
+  &.wide-profile {
+    @media screen and (min-width: 1200px) {
+      width: 82%;
+    }
+  }
 }
 
 .user-banner-cover {
@@ -22,6 +36,10 @@
 
 .profile-section {
   margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    width: 82%;
+  }
 }
 
 .user-profile-photos {
