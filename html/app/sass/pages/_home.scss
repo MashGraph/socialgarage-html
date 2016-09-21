@@ -1,3 +1,9 @@
+.feed-profile{
+  width:355px;
+}
+.feed-data-list{
+  width:505px;
+}
 .user-details {
   .user-cover-photo {
     min-height: 280px;
@@ -23,9 +29,9 @@
     }
 
     .username {
-      font-size: 30px;
+      font-size: 20px;
+      font-weight: 700;
       margin: 0;
-      font-family: 'Helvetica-Bold';
     }
   }
 }
@@ -40,6 +46,7 @@
 
       h2 {
         color: $site-blue;
+        font-weight: 700;
       }
 
       p {
@@ -127,17 +134,28 @@
     border-bottom: none;
   }
 
-  .post-author-photo {}
+  .post-author-photo,.commenter-photo {
+    width:50px;
+    height: 50px;
+    padding:0;
+    float:left;
+  }
 
   .post-item-content {
     padding: 15px 10px;
 
-    .post-message {
-      h3 {
+    .post-message ,.comment-content{
+      width:400px;
+      margin-bottom:20px;
+      float:left;
+      padding:0 10px 0 15px;
+
+      h4 {
         margin: 0;
+        font-size: 16px;
+        color:#3b4448;
 
         span {
-          padding-left: 15px;
           color: $site-blue;
         }
       }
@@ -175,12 +193,23 @@
 
   .user-reactions {
     margin-top: 15px;
-    border-bottom: #d1d1d1 thin solid;
+    &.bordered{
+          border-bottom: #d1d1d1 thin solid;
+
+    }
 
     ul {
       li {
         display: inline-block;
         margin: 0 8px;
+        a{
+          font-size: 12px;
+          color:#7d7d7d;
+          i{
+            color:$site-blue;
+
+          }
+        }
       }
     }
   }
@@ -195,15 +224,17 @@
       padding-bottom: 20px;
 
       .commenter-photo {
-        @media screen and (max-width: 767px) {
-          padding: 0;
-        }
+        width:40px;
+        height: 40px;
+        float:left;
+
       }
 
-      .comment-content {
-        @media screen and (max-width: 767px) {
-          padding: 10px 0;
-        }
+      .commenter-content {
+        float:left;
+        width:405px;
+        padding:0 10px 0 15px;
+
       }
     }
 
@@ -213,6 +244,9 @@
           display: inline-block;
           margin-right: 10px;
           margin-top: 10px;
+          a{
+            color:$site-blue;
+          }
         }
       }
 
@@ -232,6 +266,7 @@
       li {
         margin-top: 10px;
         margin-bottom: 10px;
+
       }
     }
   }
@@ -241,18 +276,21 @@
   padding-top: 10px;
 
   .commenter-photo {
-    @media screen and (max-width: 767px) {
-      padding: 0;
-    }
+    width:38px !important;
+    height: 38px !important;
   }
-
+  .commenter-content{
+    width:340px !important;
+  }
   &.comment-box {
+    .commenter-photo {
+      width:40px !important;
+      height: 40px !important;
+    }
     .commenter-content {
-      @media screen and (max-width: 767px) {
-        padding: 0;
-      }
-
-      textarea {}
+      width:405px !important;
+      padding:0 10px 0 15px;
+      float:left;
     }
   }
 
@@ -268,4 +306,11 @@
 .comment-replies-list {
   padding-top: 15px;
   padding-bottom: 15px;
+  .commenter-photo{
+    width:38px ;
+    height:38px ;
+  }
+  .commenter-content{
+    width:340px !important;
+  }
 }

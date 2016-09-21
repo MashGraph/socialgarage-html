@@ -2,10 +2,12 @@ html,
 body {
   height: 100%;
   margin: 0px;
-  padding-top: 55px;
-  font-family: 'Helvetica-Regular';
+  font-family: 'Lato', sans-serif;
 }
+body{
+    padding-top: 45px;
 
+}
 .unpadded {
   padding: 0 !important;
 }
@@ -100,4 +102,8 @@ ul {
   .fa {
     padding-top: 0 !important;
   }
+}
+.widget-section{
+  float:left;
+  padding:15px;
 }
