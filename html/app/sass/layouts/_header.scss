@@ -1,71 +1,63 @@
-header {
-  .navbar {
-    background-color: $nav-bg-color;
-    min-height: 60px;
-    margin-bottom: 0;
-  }
 
-  .navbar-brand {
-    @media screen and (max-width: 767px) {
-      width: 60px;
-    }
-  }
+.navbar{
+  background-color:#011111;
+  height: 40px;
 
-  .navbar-search {
-    @media screen and (min-width: 1200px) {
-      margin-left: 40px;
-    }
-
-    form {
-      padding: 20px 0;
-
-      i {
-        font-size: 20px;
-        color: #969696;
-      }
-
-      input {
-        border-radius: 0;
-        background-color: transparent;
-        color: #969696;
-        border: none;
-      }
-
-      input {
-        box-shadow: none;
-
-        &:focus {
-          box-shadow: none;
-        }
-      }
-    }
-  }
-
-  .navbar-nav {
-    a {
-      font-size: 24px;
-    }
-
-    &.main-nav {
-      @media screen and (min-width: 1200px) {
-        padding-left: 65px !important;
-      }
-
-      @media screen and (min-width: 768px) {
-        padding-left: 20px;
-      }
-
-      a {
-        font-size: 32px;
-        margin-right: 40px;
-      }
-    }
-
-    li {
-      a {
-        line-height: 60px;
-        color: #fff !important;
-      }
-    }
-  }
 }
+
+.navbar-md {
+  min-height:40px;
+	.navbar-brand{
+	  padding-top:7px !important;
+	  height:40px;
+	}
+	.navbar-brand,
+    .navbar-nav>li>a {padding-top:10px; padding-bottom:10px}
+    .navbar-toggle {margin: 6px 12px 6px 0px; padding: 6px 7px 6px 7px;.icon-bar {width: 19px;}}
+    .main-nav{
+    	padding-left:35px;
+    	li{
+    		a{
+    			font-size:23px;
+    			margin-left:10px;
+    			color:#fff;
+    			margin-right:10px;
+    			padding-top:7px;
+    			padding-bottom:7px;
+    		}
+    	}
+    }
+
+	.search{
+		padding-left:75px;
+		.navbar-form{
+			padding:0;
+			margin:0;
+			margin-top: 3px;
+		}
+		button,
+		input{
+			background-color:transparent;
+			border-radius: 0;
+			border:none;
+			&:focus,
+			&:hover{
+				border:none;
+				background-color:transparent;
+				box-shadow:none;
+			}
+			i{
+				font-size: 16px;
+			}
+		}
+		button{
+			padding:2px 9px;
+			border-right:#fff thin solid;
+		}
+		input{
+			color:$gray-color;
+		}
+
+	}
+}
+
