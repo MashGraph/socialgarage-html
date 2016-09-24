@@ -3,6 +3,7 @@ body {
   height: 100%;
   margin: 0px;
   font-family: 'Lato', sans-serif;
+  color: #3b4448;
 }
 
 body {
@@ -24,17 +25,22 @@ ul {
 }
 
 .widgets {
-  border: thin #d1d1d1 solid;
+  border: thin $border-color solid;
   position: relative;
   margin-top: 15px;
   margin-bottom: 15px;
+  background-color: #fff;
   padding: 10px 15px;
   .widget-header {
     position: relative;
     h3 {
       font-size: 16px;
       font-family: 'Lato', sans-serif;
+      font-weight: 700;
       margin: 0;
+      i {
+        padding-right: 10px;
+      }
     }
   }
   .widget-option {
@@ -45,6 +51,7 @@ ul {
   }
   .widget-content {
     padding-top: 25px;
+    .photos-list {}
   }
   .list-content {
     h3 {
@@ -193,4 +200,24 @@ ul {
 .icon-addon .form-control:focus + .fa,
 .icon-addon:hover .fa {
   color: #2580db;
+}
+
+.popover {
+  position: fixed;
+  ul {
+    li {
+      margin-bottom: 5px;
+      a {
+        color: $border-color;
+        i {
+          color: $site-blue;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+.blue {
+  color: $site-blue;
 }

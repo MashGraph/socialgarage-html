@@ -1,51 +1,52 @@
-.profile-banner {
-  min-height: 520px;
-  margin-top: -20px;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  &.wide-profile {
-    @media screen and (min-width: 1200px) {
-      width: 82%;
-    }
+.profile-main-container {
+  .profile-banner {
+    min-height: 235px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 850px;
+    margin-top: -3px;
   }
-}
-
-.user-counts {
-  &.wide-profile {
-    @media screen and (min-width: 1200px) {
-      width: 82%;
-    }
-  }
-}
-
-.user-banner-cover {
-  width: 230px;
-
-  @include centerer(true, true);
-
-  .cover-name {
-    text-align: center;
-    color: #fff;
-
+  .user-counts {
+    width: 850px;
+    min-height: 60px;
+    background-color: #011111;
     h2 {
-      margin: 0;
+      font-size: 25px;
+      margin-top: 10px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .nav {
+      margin: 0 auto;
+      text-align: center;
+      li {
+        display: inline-block;
+        padding: 0 50px;
+      }
     }
   }
-}
-
-.profile-section {
-  margin-top: 20px;
-
-  @media screen and (min-width: 1200px) {
-    width: 82%;
+  .user-banner-cover {
+    width: 135px;
+    @include centerer(true, true);
+    .cover-name {
+      text-align: center;
+      color: #fff;
+      h2 {
+        margin: 0;
+        font-size: 25px;
+        font-weight: 700;
+      }
+    }
   }
-}
-
-.user-profile-photos {
-  margin-top: 0;
-}
-
-.photo-item {
-  padding: 0;
+  .profile-section {
+    margin-top: 10px
+;
+  }
+  .user-profile-photos {
+    margin-top: 0;
+  }
+  .photo-item {
+    padding: 0;
+  }
 }

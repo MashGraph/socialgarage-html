@@ -50,7 +50,7 @@
         </div>
         <div class="widgets user-ranks">
           <div class="clearfix widget-header">
-            <h3><i class="fa fa-trophy" aria-hidden="true"></i> Top Ranked</h3>
+            <h3><i class="fa fa-trophy" aria-hidden="true"></i>Leaderboard</h3>
             <a class="widget-option" href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
           </div>
           <div class="widget-content">
@@ -90,7 +90,7 @@
             </ul>
             <br/>
             <div class="view-all text-center">
-              <a href="#">View All 10 Top Ranking</a>
+              <a href="javascript:void(0)">View All 10 Top Ranking</a>
             </div>
           </div>
         </div>
@@ -102,16 +102,16 @@
           </div>
           <ul>
             <li>
-              <a href="#">About |</a>
+              <a href="javascript:void(0)">About |</a>
             </li>
             <li>
-              <a href="#">Help |</a>
+              <a href="javascript:void(0)">Help |</a>
             </li>
             <li>
-              <a href="#">Terms |</a>
+              <a href="javascript:void(0)">Terms |</a>
             </li>
             <li>
-              <a href="#">Privacy</a>
+              <a href="javascript:void(0)">Privacy</a>
             </li>
           </ul>
         </div>
@@ -125,6 +125,16 @@
               <div class="col-md-12">
                 <textarea placeholder="What's on your mind?" name="post-message"></textarea>
                 <button class="btn btn-post">POST</button>
+                <div class="extra-post-action">
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0);"><i class="fa fa-edit"></i> Status</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);"> <i class="fa fa-camera"> </i> Photo / Video</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -170,8 +180,8 @@
                           </span>
                       <div class="comment-reactions">
                         <ul>
-                          <li><a href="#">Like</a></li>
-                          <li><a href="#">Reply</a></li>
+                          <li><a href="javascript:void(0)">Like</a></li>
+                          <li><a href="javascript:void(0)">Reply</a></li>
                           <li><span>&#9679; Just Now</span></li>
                         </ul>
                       </div>
@@ -190,8 +200,8 @@
                                     </span>
                               <div class="comment-reactions">
                                 <ul>
-                                  <li><a href="#">Like</a></li>
-                                  <li><a href="#">Reply</a></li>
+                                  <li><a href="javascript:void(0)">Like</a></li>
+                                  <li><a href="javascript:void(0)">Reply</a></li>
                                   <li><span>&#9679; Just Now</span></li>
                                 </ul>
                               </div>
@@ -210,8 +220,8 @@
                                     </span>
                               <div class="comment-reactions">
                                 <ul>
-                                  <li><a href="#">Like</a></li>
-                                  <li><a href="#">Reply</a></li>
+                                  <li><a href="javascript:void(0)">Like</a></li>
+                                  <li><a href="javascript:void(0)">Reply</a></li>
                                   <li><span> &#9679; Just Now</span></li>
                                 </ul>
                               </div>
@@ -278,45 +288,171 @@
         </div>
       </div>
     </div>
-    <div class="chat-box">
-      <div class="search-burger">
-        <div class="form-group clearfix">
-          <div class="icon-addon addon-sm">
-            <input type="text" placeholder="Search" class="form-control">
-            <label for="search" class="glyphicon glyphicon-search" rel="tooltip" title="search"></label>
-          </div>
-        </div>
-        <span class="badge">5</span>
-        <div id="nav-icon1">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+  </div>
+  <div class="chat-box">
+    <div class="chat-user-list">
+      <div class="title">
+        <span>channels</span>
       </div>
-      <div class="user-action-tabs">
-        <ul class="nav nav-justified">
+      <div class="channel-list">
+        <ul>
+          <li class="active">
+            <a href="">#Developers</a>
+          </li>
           <li>
-            <a href="#">
-              <i class="fa fa-file-o"></i>
-              <br/>My Files
+            <a href="">#General</a>
+          </li>
+          <li>
+            <a href="">#Random</a>
+          </li>
+        </ul>
+      </div>
+      <div class="title">
+        <span>direct message</span>
+      </div>
+      <div class="direct-list">
+        <ul>
+          <li class="online">
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <a href="javascript:void(0)">
+              <img class="img-responsive" src="img/user-photo.png" alt="user photo" />
             </a>
           </li>
           <li>
-            <a href="#">
-              <i class="fa fa-files-o"></i>
-              <br/>All Files
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <a href="javascript:void(0)">
+              <img class="img-responsive" src="img/user-photo.png" alt="user photo" />
             </a>
           </li>
           <li>
-            <a href="#">
-              <i class="fa fa-archive"></i>
-              <br/>Pinned Items
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <a href="javascript:void(0)">
+              <img class="img-responsive" src="img/user-photo.png" alt="user photo" />
+            </a>
+          </li>
+          <li>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <a href="javascript:void(0)">
+              <img class="img-responsive" src="img/user-photo.png" alt="user photo" />
             </a>
           </li>
         </ul>
       </div>
-      <div class="channel-name">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div class="search-burger">
+      <div class="form-group clearfix">
+        <div class="icon-addon addon-sm">
+          <input type="text" placeholder="Search" class="form-control">
+          <label for="search" class="glyphicon glyphicon-search" rel="tooltip" title="search"></label>
+        </div>
+      </div>
+      <span class="badge">5</span>
+      <div id="nav-icon1">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="user-action-tabs">
+      <ul class="nav nav-justified">
+        <li>
+          <a href="javascript:void(0)">
+            <i class="fa fa-file-o"></i>
+            <br/>My Files
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <i class="fa fa-files-o"></i>
+            <br/>All Files
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <i class="fa fa-archive"></i>
+            <br/>Pinned Items
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="channel-name">
+      <span class="channel-text">#Developers</span>
+      <br/>
+      <span>CHANNEL</span>
+    </div>
+    <div class="user-chat-list scroll-chat-list">
+      <ul>
+        <li>
+          <div class="chat-user-photo">
+            <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail" />
+          </div>
+          <div class="chat-user-content">
+            <h5>Cris McKnight <span>@chrismcknigh</span> <small>3:45pm</small></h5> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </li>
+        <li>
+          <div class="chat-user-photo">
+            <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail" />
+          </div>
+          <div class="chat-user-content">
+            <h5>Cris McKnight <span>@chrismcknigh</span> <small>3:45pm</small></h5> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </li>
+        <li>
+          <div class="chat-user-photo">
+            <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail" />
+          </div>
+          <div class="chat-user-content">
+            <h5>Cris McKnight <span>@chrismcknigh</span> <small>3:45pm</small></h5> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </li>
+        <li>
+          <div class="chat-user-photo">
+            <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail" />
+          </div>
+          <div class="chat-user-content">
+            <h5>Cris McKnight <span>@chrismcknigh</span> <small>3:45pm</small></h5> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </li>
+        <li>
+          <div class="chat-user-photo">
+            <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail" />
+          </div>
+          <div class="chat-user-content">
+            <h5>Cris McKnight <span>@chrismcknigh</span> <small>3:45pm</small></h5> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </li>
+        <li>
+          <div class="chat-user-photo">
+            <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail" />
+          </div>
+          <div class="chat-user-content">
+            <h5>Cris McKnight <span>@chrismcknigh</span> <small>3:45pm</small></h5> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="user-chat-input">
+      <div class="form-group clearfix">
+        <div class="icon-addon addon-sm">
+          <input type="text" placeholder="Type something ..." class="form-control">
+          <a href="#" data-html="true" data-container="body" data-toggle="popover" data-placement="top" class="user-choose-file">
+            <i class="fa fa-plus-circle" " rel="tooltip " title="Type something ... "></i>
+          </a>
+          <div id="popover-content" class="user-choose-file-content hide">
+            <ul>
+              <li>
+                <a href="javascript:void(0)"><i class="fa fa-upload"></i> Upload a file</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="fa fa-file-o"> </i> Create a snippet</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="fa fa-file-text-o"></i> Create a post</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
