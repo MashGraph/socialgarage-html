@@ -31,33 +31,42 @@ ul {
   margin-bottom: 15px;
   background-color: #fff;
   padding: 10px 15px;
+
   .widget-header {
     position: relative;
+
     h3 {
       font-size: 16px;
       font-family: 'Lato', sans-serif;
       font-weight: 700;
       margin: 0;
+
       i {
         padding-right: 10px;
       }
     }
   }
+
   .widget-option {
     @include centerer(false, true);
+
     color: #d6d6d6;
     right: -5px;
     font-size: 18px;
   }
+
   .widget-content {
     padding-top: 25px;
+
     .photos-list {}
   }
+
   .list-content {
     h3 {
       margin: 0;
       font-size: 20px;
       color: $nav-bg-color;
+
       span {
         padding-left: 15px;
         color: $site-blue;
@@ -89,10 +98,12 @@ ul {
   border: none;
   padding: 8px 10px;
   background-color: $site-blue;
+
   i {
     font-size: 30px;
     vertical-align: middle;
   }
+
   span {
     padding-left: 8px;
   }
@@ -103,10 +114,12 @@ ul {
 //     width: 1366px;
 //   }
 // }
+
 .btn-lg {
   display: flex;
   align-items: center;
   justify-content: center;
+
   .fa {
     padding-top: 0 !important;
   }
@@ -204,11 +217,14 @@ ul {
 
 .popover {
   position: fixed;
+
   ul {
     li {
       margin-bottom: 5px;
+
       a {
         color: $border-color;
+
         i {
           color: $site-blue;
           padding-right: 5px;

@@ -4,6 +4,12 @@ $(document).ready(function() {
     $('.chat-user-list').toggleClass('open');
 
   });
+
+  $('.chat-toggle').click(function() {
+
+    $('.chat-box').toggleClass('open');
+
+  });
   $('.scroll-chat-list').slimscroll({
     height: '75%',
     distance: '3px',
