@@ -32,6 +32,15 @@ $(document).ready(function() {
 
 
   });
+  $('.direct-scroll').slimscroll({
+    height: '300px',
+    distance: '3px',
+    size: '3px',
+    railVisible: false
+
+
+
+  });
   $('.user-choose-file').popover({
     html: true,
     content: function() {
