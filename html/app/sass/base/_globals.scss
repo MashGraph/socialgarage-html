@@ -2,15 +2,20 @@ html,
 body {
   height: 100%;
   margin: 0px;
-  padding-top: 55px;
-  font-family: 'Helvetica-Regular';
+  font-family: 'Lato', sans-serif;
+  color: #3b4448;
+}
+
+body {
+  padding-top: 45px;
 }
 
 .unpadded {
   padding: 0 !important;
 }
 
-div, section {
+div,
+section {
   position: relative;
 }
 
@@ -20,14 +25,26 @@ ul {
 }
 
 .widgets {
-  border: thin #d1d1d1 solid;
+  border: thin $border-color solid;
   position: relative;
   margin-top: 15px;
   margin-bottom: 15px;
+  background-color: #fff;
   padding: 10px 15px;
 
   .widget-header {
     position: relative;
+
+    h3 {
+      font-size: 16px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      margin: 0;
+
+      i {
+        padding-right: 10px;
+      }
+    }
   }
 
   .widget-option {
@@ -35,7 +52,13 @@ ul {
 
     color: #d6d6d6;
     right: -5px;
-    font-size: 26px;
+    font-size: 18px;
+  }
+
+  .widget-content {
+    padding-top: 25px;
+
+    .photos-list {}
   }
 
   .list-content {
@@ -59,7 +82,7 @@ ul {
 }
 
 .delete-follow {
-  right: 15px;
+  right: 0;
   position: absolute;
   color: #d8d8d8;
   z-index: 999;
@@ -67,14 +90,13 @@ ul {
 }
 
 .btn {
-  font-family: 'Helvetica-regular';
+  font-family: 'Lato', sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   color: #fff;
   border: none;
   border: none;
-  padding: 10px 20px;
-  padding-top: 20px;
+  padding: 8px 10px;
   background-color: $site-blue;
 
   i {
@@ -87,8 +109,131 @@ ul {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1366px;
+// @media screen and (min-width: 1200px) {
+//   .container {
+//     width: 1366px;
+//   }
+// }
+
+.btn-lg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .fa {
+    padding-top: 0 !important;
   }
+}
+
+.widget-section {
+  float: left;
+  padding: 15px;
+}
+
+.center-block {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-group .icon-addon .form-control {
+  border-radius: 0;
+}
+
+.icon-addon {
+  position: relative;
+  color: #555;
+  display: block;
+}
+
+.icon-addon:after,
+.icon-addon:before {
+  display: table;
+  content: " ";
+}
+
+.icon-addon:after {
+  clear: both;
+}
+
+.icon-addon.addon-md .glyphicon,
+.icon-addon .glyphicon,
+.icon-addon.addon-md .fa,
+.icon-addon .fa {
+  position: absolute;
+  z-index: 2;
+  left: 10px;
+  font-size: 14px;
+  width: 20px;
+  margin-left: -2.5px;
+  text-align: center;
+  padding: 10px 0;
+  top: 1px;
+}
+
+.icon-addon.addon-lg .form-control {
+  line-height: 1.33;
+  height: 46px;
+  font-size: 18px;
+  padding: 10px 16px 10px 40px;
+}
+
+.icon-addon.addon-sm .form-control {
+  height: 30px;
+  padding: 5px 10px 5px 28px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.icon-addon.addon-lg .fa,
+.icon-addon.addon-lg .glyphicon {
+  font-size: 18px;
+  margin-left: 0;
+  left: 11px;
+  top: 4px;
+}
+
+.icon-addon.addon-md .form-control,
+.icon-addon .form-control {
+  padding-left: 30px;
+  float: left;
+  font-weight: normal;
+}
+
+.icon-addon.addon-sm .fa,
+.icon-addon.addon-sm .glyphicon {
+  margin-left: 0;
+  font-size: 12px;
+  left: 5px;
+  top: -1px;
+}
+
+.icon-addon .form-control:focus + .glyphicon,
+.icon-addon:hover .glyphicon,
+.icon-addon .form-control:focus + .fa,
+.icon-addon:hover .fa {
+  color: #2580db;
+}
+
+.popover {
+  position: fixed;
+
+  ul {
+    li {
+      margin-bottom: 5px;
+
+      a {
+        color: $border-color;
+
+        i {
+          color: $site-blue;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+.blue {
+  color: $site-blue;
 }
