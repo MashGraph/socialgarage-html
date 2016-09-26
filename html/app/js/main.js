@@ -1,4 +1,14 @@
 $(document).ready(function() {
+  var wWidth = $(window).width();
+  var curScrollHeight;
+  if(wWidth >= 768){
+    curScrollHeight = '81%';
+  }
+  if(wWidth >= 1024){
+    curScrollHeight = '75%';
+  }
+
+  console.log(curScrollHeight);
   $('#nav-icon1').click(function() {
     $(this).toggleClass('open');
     $('.chat-user-list').toggleClass('open');
@@ -11,7 +21,7 @@ $(document).ready(function() {
 
   });
   $('.scroll-chat-list').slimscroll({
-    height: '75%',
+    height: curScrollHeight,
     distance: '3px',
     size: '3px',
     railVisible: false
