@@ -7,6 +7,9 @@ $(document).ready(function() {
   if(wWidth >= 1024){
     curScrollHeight = '75%';
   }
+  if(wWidth <= 767){
+    curScrollHeight = '66%';
+  }
 
   console.log(curScrollHeight);
   $('#nav-icon1').click(function() {
