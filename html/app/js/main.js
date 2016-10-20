@@ -5,7 +5,7 @@ $(document).ready(function() {
     curScrollHeight = '81%';
   }
   if(wWidth >= 1024){
-    curScrollHeight = '75%';
+    curScrollHeight = '72%';
   }
   if(wWidth <= 767){
     curScrollHeight = '66%';
@@ -34,6 +34,16 @@ $(document).ready(function() {
   });
   $('.direct-scroll').slimscroll({
     height: '300px',
+    distance: '3px',
+    size: '3px',
+    railVisible: false
+
+
+
+  });
+
+  $('.channel-list').slimscroll({
+    height: '100px',
     distance: '3px',
     size: '3px',
     railVisible: false

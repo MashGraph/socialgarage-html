@@ -96,7 +96,6 @@ ul {
   color: #fff;
   border: none;
   border: none;
-  padding: 8px 10px;
   background-color: $site-blue;
 
   i {
@@ -149,7 +148,7 @@ ul {
 .icon-addon:after,
 .icon-addon:before {
   display: table;
-  content: " ";
+  content: ' ';
 }
 
 .icon-addon:after {
