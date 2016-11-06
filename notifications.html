@@ -8,16 +8,9 @@
   <title>Social Garage</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
-  <!-- build:css styles/vendor.css -->
-  <!-- bower:css -->
-  <!-- endbower -->
-  <!-- endbuild -->
-  <!-- build:css css/main.css -->
+  
   <link rel="stylesheet" href="css/main.css">
-  <!-- endbuild -->
-  <!-- build:js js/vendor/modernizr.js -->
-  <script src="/bower_components/modernizr/modernizr.js"></script>
-  <!-- endbuild -->
+  <script src="js/vendor/modernizr.js"></script>
 </head>
 
 <body>
@@ -177,176 +170,104 @@
       </div>
     </div>
     <div class="feed-data-list widget-section">
-      <div class="widgets user-feed">
-        <div class="row">
-          <div class="post-area clearfix">
-            <div class="row">
-              <div class="col-md-12">
-                <textarea placeholder="What's on your mind?" name="post-message"></textarea>
-                <button class="btn btn-post">POST</button>
-                <div class="extra-post-action">
-                  <ul>
-                    <li>
-                      <a href="javascript:void(0);"><i class="fa fa-edit"></i> Status</a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);"> <i class="fa fa-camera"> </i> Photo / Video</a>
-                    </li>
-                  </ul>
+      <div class="widgets notification-list">
+        <div class="header-underlined">
+          <h4>Notifications</h4>
+        </div>
+        <div class="widget-content">
+          <ul class="rank-list">
+            <li class="clearfix">
+              <div class="button-action ">
+                <button class="btn btn-xs"><i class="fa fa-user"></i><i class="fa fa-check"></i></button>
+              </div>
+              <div class=" list-content">
+                <div class="ranked-photo">
+                  <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail">
+                </div>
+                <div class="rank-content">
+                  <h3>Jane Smith<span>@janesmith</span><small>3:45pm</small></h3>
+                  <p>started following you.</p>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="post-item">
-            <div class="post-item-content clearfix">
-              <div class="post-author-photo">
-                <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail" />
-              </div>
-              <div class="post-message">
-                <div class="post-author">
-                  <h4>Steve Marks <span>@stevemarks</span></h4>
-                  <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true"></i> Just Now</span>
+            </li>
+            <li>
+              <div class="inverse button-action ">
+                  <button class="btn btn-xs"><i class="fa fa-pencil"></i></button>
                 </div>
-                <div class="post-content">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repudiandae provident voluptatibus libero, nobis soluta reprehenderit adipisci recusandae dolor, similique repellendus. Error saepe dolorem animi alias officia vero maxime quas.
-                </div>
-              </div>
-              <div class="user-reactions bordered">
-                <ul>
-                  <li>
-                    <a href=""><i class="fa fa-thumbs-up" aria-hidden="true"></i> 10 Likes</a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-comments" aria-hidden="true"></i> 243 Comments</a>
-                  </li>
-                  <li>
-                    <a href=""><i class="fa fa-share" aria-hidden="true"></i> 10 Shares</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="comment-list clearfix">
-                <ul class="clearfix">
-                  <li class="clearfix comment-item">
-                    <div class="commenter-photo">
-                      <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail" />
-                    </div>
-                    <div class="commenter-content">
-                      <span class="author">
-                            Jim Barren
-                          </span>
-                      <span>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam delectus modi quis, architecto repudiandae dignissimos harum temporibus iusto eligendi cum vitae, repellendus voluptatem aperiam aliquid praesentium dolore tempore, dolor exercitationem.
-                          </span>
-                      <div class="comment-reactions">
-                        <ul>
-                          <li><a href="javascript:void(0)">Like</a></li>
-                          <li><a href="javascript:void(0)">Reply</a></li>
-                          <li><span>&#9679; Just Now</span></li>
-                        </ul>
-                      </div>
-                      <div class="comment-replies-reply cleafix">
-                        <ul class="clearfix comment-replies-list">
-                          <li>
-                            <div class="commenter-photo">
-                              <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail" />
-                            </div>
-                            <div class="commenter-content">
-                              <span class="author">
-                                      Jim Barren
-                                </span>
-                              <span>
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam delectus modi quis, architecto repudiandae dignissimos harum temporibus iusto eligendi cum vitae, repellendus voluptatem aperiam aliquid praesentium dolore tempore, dolor exercitationem.
-                                    </span>
-                              <div class="comment-reactions">
-                                <ul>
-                                  <li><a href="javascript:void(0)">Like</a></li>
-                                  <li><a href="javascript:void(0)">Reply</a></li>
-                                  <li><span>&#9679; Just Now</span></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="commenter-photo">
-                              <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail" />
-                            </div>
-                            <div class="commenter-content">
-                              <span class="author">
-                                      Jim Barren
-                                </span>
-                              <span>
-                                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam delectus modi quis, architecto repudiandae dignissimos harum temporibus iusto eligendi cum vitae, repellendus voluptatem aperiam aliquid praesentium dolore tempore, dolor exercitationem.
-                                    </span>
-                              <div class="comment-reactions">
-                                <ul>
-                                  <li><a href="javascript:void(0)">Like</a></li>
-                                  <li><a href="javascript:void(0)">Reply</a></li>
-                                  <li><span> &#9679; Just Now</span></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                        <div class="reply-box clearfix">
-                          <div class="commenter-photo">
-                            <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail" />
-                          </div>
-                          <div class="commenter-content ">
-                            <textarea placeholder="Write a reply..." name="post-reply"></textarea>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <div class="reply-box comment-box">
-                  <div class="commenter-photo ">
-                    <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail" />
+                <div class=" list-content">
+                  <div class="ranked-photo">
+                    <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail">
                   </div>
-                  <div class="commenter-content">
-                    <textarea placeholder="Write a reply..." name="post-reply"></textarea>
+                  <div class="rank-content">
+                    <h3>Jane Smith<span>@janesmith</span><small>3:45pm</small></h3>
+                    <p>started following you.</p>
                   </div>
                 </div>
+            </li>
+            <li class="clearfix">
+              <div class="button-action ">
+                <button class="btn btn-xs"><i class="fa fa-user"></i><i class="fa fa-check"></i></button>
               </div>
-            </div>
-          </div>
-          <div class="post-item">
-            <div class="post-item-content clearfix">
-              <div class="post-author-photo ">
-                <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail" />
-              </div>
-              <div class="post-message ">
-                <div class="post-author">
-                  <h4>Steve Marks <span>@stevemarks</span></h4>
-                  <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true"></i> Just Now</span>
+              <div class=" list-content">
+                <div class="ranked-photo">
+                  <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail">
                 </div>
-                <div class="post-content">
-                  <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repudiandae provident voluptatibus libero, nobis soluta reprehenderit adipisci recusandae dolor, similique repellendus. Error saepe dolorem animi alias officia vero maxime quas.
-                  </span>
-                  <br/>
-                  <br/>
-                  <img src="img/sample-post-image.jpg" class="img-responsive" alt="sample-image" />
-                </div>
-                <div class="user-reactions">
-                  <ul>
-                    <li>
-                      <a href=""><i class="fa fa-thumbs-up" aria-hidden="true"></i> 10 Likes</a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa fa-comments" aria-hidden="true"></i> 243 Comments</a>
-                    </li>
-                    <li>
-                      <a href=""><i class="fa fa-share" aria-hidden="true"></i> 10 Shares</a>
-                    </li>
-                  </ul>
+                <div class="rank-content">
+                  <h3>Jane Smith<span>@janesmith</span><small>3:45pm</small></h3>
+                  <p>started following you.</p>
                 </div>
               </div>
-            </div>
+            </li>
+            <li>
+              <div class="inverse button-action ">
+                  <button class="btn btn-xs"><i class="fa fa-pencil"></i></button>
+                </div>
+                <div class=" list-content">
+                  <div class="ranked-photo">
+                    <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail">
+                  </div>
+                  <div class="rank-content">
+                    <h3>Jane Smith<span>@janesmith</span><small>3:45pm</small></h3>
+                    <p>started following you.</p>
+                  </div>
+                </div>
+            </li>
+            <li class="clearfix">
+              <div class="button-action ">
+                <button class="btn btn-xs"><i class="fa fa-user"></i><i class="fa fa-check"></i></button>
+              </div>
+              <div class=" list-content">
+                <div class="ranked-photo">
+                  <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail">
+                </div>
+                <div class="rank-content">
+                  <h3>Jane Smith<span>@janesmith</span><small>3:45pm</small></h3>
+                  <p>started following you.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="inverse button-action ">
+                  <button class="btn btn-xs"><i class="fa fa-pencil"></i></button>
+                </div>
+                <div class=" list-content">
+                  <div class="ranked-photo">
+                    <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail">
+                  </div>
+                  <div class="rank-content">
+                    <h3>Jane Smith<span>@janesmith</span><small>3:45pm</small></h3>
+                    <p>started following you.</p>
+                  </div>
+                </div>
+            </li>
+          </ul>
+          <div class="see-all">
+             <a href="#">See All</a>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
   <div class="chat-box">
     <div class="chat-user-list">
@@ -370,8 +291,7 @@
         <span>direct message</span>
       </div>
       <div class="direct-list">
-                <ul class="direct-scroll">
-
+        <ul class="direct-scroll">
           <li class="online">
             <i class="fa fa-circle" aria-hidden="true"></i>
             <a href="javascript:void(0)">
@@ -519,31 +439,9 @@
 </section>
 <script>
 </script>
-<!-- build:js js/vendor.js -->
-<!-- bower:js -->
-<script src="/bower_components/modernizr/modernizr.js"></script>
-<script src="/bower_components/jquery/dist/jquery.js"></script>
-<script src="/bower_components/jquery-slimscroll/jquery.slimscroll.js"></script>
-<script src="/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-<!-- endbower -->
-<!-- endbuild -->
-<!-- build:js js/plugins.js -->
-<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
-<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
-<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
-<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
-<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
-<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
-<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
-<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
-<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
-<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
-<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
-<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-<!-- endbuild -->
-<!-- build:js js/main.js -->
+<script src="js/vendor.js"></script>
+<script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
-<!-- endbuild -->
 </body>
 
 </html>
