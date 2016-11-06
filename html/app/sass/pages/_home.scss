@@ -73,7 +73,7 @@
       padding: 8px 15px;
 
       h2 {
-        color: $site-blue;
+        color: $main-theme-color;
         font-weight: 700;
 
         @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -93,7 +93,7 @@
   }
 }
 
-.user-ranks {
+.user-ranks, .notification-list {
   .ranked-photo {
     position: absolute;
 
@@ -129,7 +129,7 @@
     top: -5px;
     left: -5px;
     padding: 3px 6px;
-    background-color: $site-blue;
+    background-color: $main-theme-color;
   }
 
   .btn-follow {
@@ -180,7 +180,7 @@
           display: inline-block;
 
           i {
-            color: $site-blue;
+            color: $main-theme-color;
             padding-right: 5px;
           }
 
@@ -247,7 +247,7 @@
         color: #3b4448;
 
         span {
-          color: $site-blue;
+          color: $main-theme-color;
         }
       }
 
@@ -303,7 +303,7 @@
           }
 
           i {
-            color: $site-blue;
+            color: $main-theme-color;
           }
         }
       }
@@ -312,7 +312,7 @@
 
   .comment-list {
     .author {
-      color: $site-blue;
+      color: $main-theme-color;
     }
 
     .comment-item {
@@ -353,7 +353,7 @@
           margin-top: 10px;
 
           a {
-            color: $site-blue;
+            color: $main-theme-color;
             font-size: 12px;
           }
 
@@ -513,7 +513,7 @@
 
           &.active {
             a {
-              background-color: $site-blue;
+              background-color: $main-theme-color;
               color: #fff;
               padding: 5px 20px;
               border-radius: 3px;
@@ -570,7 +570,7 @@
 
   .search-burger {
     padding: 10px 15px;
-    background-color: #00b3cd;
+    background-color: $main-theme-color;
 
     .form-group {
       width: 280px;
@@ -622,7 +622,7 @@
   }
 
   .user-action-tabs {
-    background-color: #00a4bc;
+    background-color: $secondary-theme-color;
     padding: 4px;
     color: #fff;
 
@@ -639,7 +639,7 @@
     }
 
     a {
-      color: #fff;
+      color: #fff !important;
 
       i {
         font-size: 23px;
@@ -654,7 +654,7 @@
 
   .channel-name {
     margin: 0 15px;
-    padding: 15px;
+    padding: 8px;
     text-align: center;
     border-bottom: 1px $border-color solid;
 
@@ -692,7 +692,7 @@
             font-weight: 700;
 
             span {
-              color: $site-blue;
+              color: $main-theme-color;
               padding-left: 3px;
             }
 

@@ -1,3 +1,4 @@
+"use strict";
 $(document).ready(function() {
   var wWidth = $(window).width();
   var curScrollHeight;
@@ -5,7 +6,7 @@ $(document).ready(function() {
     curScrollHeight = '81%';
   }
   if(wWidth >= 1024){
-    curScrollHeight = '72%';
+    curScrollHeight = '74%';
   }
   if(wWidth <= 767){
     curScrollHeight = '66%';
