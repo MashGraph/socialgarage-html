@@ -1,5 +1,5 @@
 .feed-profile {
-  width: 355px;
+  width: 344px;
 
   @media only screen and (min-width: 768px) and (max-width: 1199px) {
     width: 35%;
@@ -75,6 +75,7 @@
       h2 {
         color: $main-theme-color;
         font-weight: 700;
+        font-size: 20px;
 
         @media only screen and (min-width: 768px) and (max-width: 1199px) {
           font-size: 18px;
@@ -84,6 +85,7 @@
       p {
         color: #fff;
         text-transform: uppercase;
+        font-size: 11px;
 
         @media only screen and (min-width: 768px) and (max-width: 1199px) {
           font-size: 10px;
@@ -322,7 +324,7 @@
       .commenter-photo {
         width: 40px;
         height: 40px;
-        float: left;
+        position: absolute;
 
         @media only screen and (max-width: 767px) {
           display: none;
@@ -443,14 +445,15 @@
 }
 
 .chat-box {
-  width: 360px;
+  width: 313px;
   position: fixed;
-  right: 0;
+  right: 130px;
   display: flex;
   background-color: #fff;
   flex-direction: column;
   z-index: 9999;
   border-left: $border-color thin solid;
+  border-right: $border-color thin solid;
   top: 40px;
   word-wrap: break-word;
   transition: .25s ease-in-out;
@@ -459,28 +462,19 @@
     width: 100% !important;
   }
 
-  &.open {
-    right: 0;
-  }
-
-  @media screen and (min-width: 1200px) {
-    right: 0;
-  }
-
   height: 100%;
 
   .chat-user-list {
-    transition: .25s ease-in-out;
     width: 130px;
     background-color: #fff;
     z-index: 9999;
-
-    @include centerer(false, true);
-
-    right: -138px;
-    text-align: center;
+    position: fixed;
+    right: 0;
+    text-align: left;
+    min-height: 100%;
     z-index: 999999;
     border: $border-color thin solid;
+    border-left: none;
 
     @media screen and (max-width: 767px) {
       top: 54%;
@@ -510,13 +504,14 @@
         li {
           margin-top: 15px;
           margin-bottom: 15px;
+          border-radius: 3px;
+          padding: 5px 8px;
 
           &.active {
+            background-color: $main-theme-color;
+
             a {
-              background-color: $main-theme-color;
-              color: #fff;
-              padding: 5px 20px;
-              border-radius: 3px;
+              color: #fff !important;
             }
           }
 
@@ -709,12 +704,11 @@
   }
 
   .user-chat-input {
-    background-color: #fff;
+    background-color: #e8e8e8;
     width: 100%;
-    align-self: flex-end;
-    bottom: 0;
+    position: absolute;
+    bottom: 40px;
     min-height: 75px;
-    margin-top: -130px;
     border-top: $border-color thin solid;
 
     .form-group {

@@ -6,7 +6,7 @@ $(document).ready(function() {
     curScrollHeight = '81%';
   }
   if(wWidth >= 1024){
-    curScrollHeight = '74%';
+    curScrollHeight = '75%';
   }
   if(wWidth <= 767){
     curScrollHeight = '66%';
@@ -44,7 +44,7 @@ $(document).ready(function() {
   });
 
   $('.channel-list').slimscroll({
-    height: '100px',
+    height: '230px',
     distance: '3px',
     size: '3px',
     railVisible: false
