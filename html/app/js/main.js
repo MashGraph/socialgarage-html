@@ -2,13 +2,13 @@
 $(document).ready(function() {
   var wWidth = $(window).width();
   var curScrollHeight;
-  if(wWidth >= 768){
+  if (wWidth >= 768) {
     curScrollHeight = '81%';
   }
-  if(wWidth >= 1024){
+  if (wWidth >= 1024) {
     curScrollHeight = '75%';
   }
-  if(wWidth <= 767){
+  if (wWidth <= 767) {
     curScrollHeight = '66%';
   }
 
@@ -56,6 +56,17 @@ $(document).ready(function() {
     html: true,
     content: function() {
       return $('#popover-content').html();
+    }
+  });
+
+
+  $('.user-popover').popover({
+    html: true,
+    trigger: 'click,outsideClick',
+
+    content: function() {
+      return $(this).next('.user-popover-content').html()
+
     }
   });
 

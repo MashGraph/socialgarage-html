@@ -1,5 +1,5 @@
 .feed-profile {
-  width: 344px;
+  width: 300px;
 
   @media only screen and (min-width: 768px) and (max-width: 1199px) {
     width: 35%;
@@ -211,6 +211,13 @@
 .post-item {
   border-bottom: thin $border-color solid;
 
+  a {
+    &:focus,
+    &:visited {
+      text-decoration: none;
+    }
+  }
+
   &:last-child {
     border-bottom: none;
   }
@@ -220,7 +227,12 @@
     width: 50px;
     height: 50px;
     padding: 0;
-    float: left;
+    position: absolute;
+  }
+
+  .post-content {
+    padding-left: 45px;
+    word-break: break-all;
   }
 
   .post-item-content {
@@ -228,8 +240,6 @@
 
     .post-message,
     .comment-content {
-      width: 400px;
-
       @media only screen and (min-width: 768px) and (max-width: 1199px) {
         width: 87%;
       }
@@ -313,13 +323,16 @@
   }
 
   .comment-list {
+    & > ul {
+      padding-left: 45px !important;
+    }
+
     .author {
       color: $main-theme-color;
     }
 
     .comment-item {
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding-top: 15px;
 
       .commenter-photo {
         width: 40px;
@@ -332,8 +345,8 @@
       }
 
       .commenter-content {
-        float: left;
-        width: 405px;
+        padding-left: 50px;
+        word-wrap: break-word;
 
         @media only screen and (min-width: 768px) and (max-width: 1199px) {
           width: 88% !important;
@@ -342,8 +355,6 @@
         @media only screen and (max-width: 767px) {
           width: 100% !important;
         }
-
-        padding: 0 10px 0 15px;
       }
     }
 
@@ -366,8 +377,6 @@
           }
         }
       }
-
-      padding-bottom: 15px;
     }
 
     .comment-replies {
@@ -389,7 +398,7 @@
 }
 
 .reply-box {
-  padding-top: 10px;
+  margin-left: 45px;
 
   .commenter-photo {
     width: 38px !important;
@@ -397,7 +406,9 @@
   }
 
   .commenter-content {
-    width: 340px !important;
+    border: $border-color thin solid;
+    padding: 10px;
+    background-color: #f9fbfb;
   }
 
   &.comment-box {
@@ -407,10 +418,6 @@
     }
 
     .commenter-content {
-      width: 405px !important;
-      padding: 0 10px 0 15px;
-      float: left;
-
       @media only screen and (min-width: 768px) and (max-width: 1199px) {
         width: 88% !important;
       }
@@ -423,10 +430,32 @@
 
   textarea {
     border: $border-color thin solid;
-    width: 100%;
     padding: 5px 10px;
+    padding-right: 35px;
     height: 30px;
     margin-top: 5px;
+    margin-left: 45px;
+  }
+
+  .btn-send {
+    @include centerer(false, true);
+
+    color: $border-color;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    right: 40px;
+  }
+
+  .btn-send-files {
+    @include centerer(false, true);
+
+    color: $main-theme-color;
+    outline: none;
+    font-size: 16px;
+    right: 5px;
+    border: none;
+    background-color: transparent;
   }
 }
 
@@ -502,8 +531,6 @@
 
       ul {
         li {
-          margin-top: 15px;
-          margin-bottom: 15px;
           border-radius: 3px;
           padding: 5px 8px;
 
