@@ -211,6 +211,33 @@
 .post-item {
   border-bottom: thin $border-color solid;
 
+  .uploaded-images {
+    .upload-image {
+      float: left;
+      padding: 5px;
+
+      &.uploaded-image-1 {
+        width: 100%;
+      }
+
+      &.uploaded-image-2 {
+        width: 50%;
+      }
+
+      &.uploaded-image-3 {
+        width: 33.33%;
+      }
+
+      &.uploaded-image-4 {
+        width: 25%;
+      }
+
+      &.uploaded-image-5 {
+        width: 20%;
+      }
+    }
+  }
+
   a {
     &:focus,
     &:visited {

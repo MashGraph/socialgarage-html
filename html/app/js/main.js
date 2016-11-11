@@ -60,6 +60,8 @@ $(document).ready(function() {
   });
 
 
+
+
   $('.user-popover').popover({
     html: true,
     container:'.post-item',
@@ -70,5 +72,8 @@ $(document).ready(function() {
 
     }
   });
+
+  $(".fancybox").fancybox();
+
 
 });
