@@ -654,6 +654,12 @@
       }
 
       li {
+        &.active {
+          a {
+            color: #c2c2c2 !important;
+          }
+        }
+
         @media only screen and (max-width: 767px) {
           display: inline-block;
         }

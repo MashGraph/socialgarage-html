@@ -62,7 +62,8 @@ $(document).ready(function() {
 
   $('.user-popover').popover({
     html: true,
-    trigger: 'click,outsideClick',
+    container:'.post-item',
+    trigger: 'click',
 
     content: function() {
       return $(this).next('.user-popover-content').html()
