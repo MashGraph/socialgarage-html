@@ -193,22 +193,23 @@
                             </li>
                           </ul>
                         </div>
-                         <div class="action-tabs">
+                        <div class="action-tabs">
                           <ul class="nav nav-justified">
                             <li>
-                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> View Profile</a>
+                              <a href="#"><i class="fa fa-user" aria-hidden="true"></i> View Profile</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-commenting" aria-hidden="true"></i> Start Chat</a>
+                              <a href="#"><i class="fa fa-commenting" aria-hidden="true"></i> Start Chat</a>
                             </li>
-
                           </ul>
                         </div>
                       </div>
                     </div>
                     <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true"></i> Just Now</span>
                   </div>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repudiandae provident voluptatibus libero, nobis soluta reprehenderit adipisci recusandae dolor, similique repellendus. Error saepe dolorem animi alias officia vero maxime quas.
+                  <div class="content" data-toggle="modal" data-target="#single-post">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repudiandae provident voluptatibus libero, nobis soluta reprehenderit adipisci recusandae dolor, similique repellendus. Error saepe dolorem animi alias officia vero maxime quas.
+                  </div>
                   <div class="user-reactions bordered">
                     <ul>
                       <li>
@@ -297,10 +298,9 @@
                     </div>
                     <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true"></i> Just Now</span>
                   </div>
-                  <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repudiandae provident voluptatibus libero, nobis soluta reprehenderit adipisci recusandae dolor, similique repellendus. Error saepe dolorem animi alias officia vero maxime quas.
-                  </span>
-                  <br/>
+                   <div class="content" data-toggle="modal" data-target="#single-post-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repudiandae provident voluptatibus libero, nobis soluta reprehenderit adipisci recusandae dolor, similique repellendus. Error saepe dolorem animi alias officia vero maxime quas.
+                  </div>
                   <br/>
                   <img src="img/sample-post-image.jpg" class="img-responsive" alt="sample-image" />
                 </div>
@@ -327,7 +327,7 @@
   <div class="chat-box">
     <div class="chat-user-list">
       <div class="title">
-        <span>channels</span>
+        <span>channels <a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></span>
       </div>
       <div class="channel-list">
         <ul>
@@ -335,53 +335,52 @@
             <a href="">#Developers</a>
           </li>
           <li>
-            <a href="">#General</a>
+            <a href="">#General </a>
+            <span class="pull-right badge">5</span>
           </li>
           <li>
             <a href="">#Random</a>
+            <span class="pull-right badge">5</span>
           </li>
         </ul>
       </div>
       <div class="title">
-        <span>direct message</span>
+        <span>direct message <a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></span>
       </div>
       <div class="direct-list">
         <ul class="direct-scroll">
-          <li class="online">
+          <li class="online has-recent">
             <i class="fa fa-circle" aria-hidden="true"></i>
             <a href="javascript:void(0)">
-              <img class="img-responsive" src="img/user-photo.png" alt="user photo" />
+                ianpansensoy
             </a>
+            <span class="pull-right badge">5</span>
           </li>
-          <li>
+           <li>
             <i class="fa fa-circle" aria-hidden="true"></i>
             <a href="javascript:void(0)">
-              <img class="img-responsive" src="img/user-photo.png" alt="user photo" />
+                ianpansensoy
             </a>
+            <span class="pull-right badge">5</span>
           </li>
-          <li>
+           <li>
             <i class="fa fa-circle" aria-hidden="true"></i>
             <a href="javascript:void(0)">
-              <img class="img-responsive" src="img/user-photo.png" alt="user photo" />
+                ianpansensoy
             </a>
+            <span class="pull-right badge">5</span>
           </li>
-          <li>
+           <li>
             <i class="fa fa-circle" aria-hidden="true"></i>
             <a href="javascript:void(0)">
-              <img class="img-responsive" src="img/user-photo.png" alt="user photo" />
+                ianpansensoy
             </a>
+            <span class="pull-right badge">5</span>
           </li>
         </ul>
       </div>
     </div>
-    <div class="search-burger">
-      <div class="form-group clearfix">
-        <div class="icon-addon addon-sm">
-          <input type="text" placeholder="Search" class="form-control">
-          <label for="search" class="glyphicon glyphicon-search" rel="tooltip" title="search"></label>
-        </div>
-      </div>
-    </div>
+
     <div class="user-action-tabs">
       <ul class="nav nav-justified">
         <li class="active">

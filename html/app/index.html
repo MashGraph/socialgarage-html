@@ -252,22 +252,23 @@
                             </li>
                           </ul>
                         </div>
-                         <div class="action-tabs">
+                        <div class="action-tabs">
                           <ul class="nav nav-justified">
                             <li>
-                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> View Profile</a>
+                              <a href="#"><i class="fa fa-user" aria-hidden="true"></i> View Profile</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-commenting" aria-hidden="true"></i> Start Chat</a>
+                              <a href="#"><i class="fa fa-commenting" aria-hidden="true"></i> Start Chat</a>
                             </li>
-
                           </ul>
                         </div>
                       </div>
                     </div>
                     <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true"></i> Just Now</span>
                   </div>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repudiandae provident voluptatibus libero, nobis soluta reprehenderit adipisci recusandae dolor, similique repellendus. Error saepe dolorem animi alias officia vero maxime quas.
+                  <div class="content" data-toggle="modal" data-target="#single-post">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repudiandae provident voluptatibus libero, nobis soluta reprehenderit adipisci recusandae dolor, similique repellendus. Error saepe dolorem animi alias officia vero maxime quas.
+                  </div>
                   <div class="user-reactions bordered">
                     <ul>
                       <li>
@@ -356,10 +357,9 @@
                     </div>
                     <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true"></i> Just Now</span>
                   </div>
-                  <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repudiandae provident voluptatibus libero, nobis soluta reprehenderit adipisci recusandae dolor, similique repellendus. Error saepe dolorem animi alias officia vero maxime quas.
-                  </span>
-                  <br/>
+                   <div class="content" data-toggle="modal" data-target="#single-post-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repudiandae provident voluptatibus libero, nobis soluta reprehenderit adipisci recusandae dolor, similique repellendus. Error saepe dolorem animi alias officia vero maxime quas.
+                  </div>
                   <br/>
                   <img src="img/sample-post-image.jpg" class="img-responsive" alt="sample-image" />
                 </div>
@@ -386,7 +386,7 @@
   <div class="chat-box">
     <div class="chat-user-list">
       <div class="title">
-        <span>channels</span>
+        <span>channels <a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></span>
       </div>
       <div class="channel-list">
         <ul>
@@ -394,53 +394,52 @@
             <a href="">#Developers</a>
           </li>
           <li>
-            <a href="">#General</a>
+            <a href="">#General </a>
+            <span class="pull-right badge">5</span>
           </li>
           <li>
             <a href="">#Random</a>
+            <span class="pull-right badge">5</span>
           </li>
         </ul>
       </div>
       <div class="title">
-        <span>direct message</span>
+        <span>direct message <a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></span>
       </div>
       <div class="direct-list">
         <ul class="direct-scroll">
-          <li class="online">
+          <li class="online has-recent">
             <i class="fa fa-circle" aria-hidden="true"></i>
             <a href="javascript:void(0)">
-              <img class="img-responsive" src="img/user-photo.png" alt="user photo" />
+                ianpansensoy
             </a>
+            <span class="pull-right badge">5</span>
           </li>
-          <li>
+           <li>
             <i class="fa fa-circle" aria-hidden="true"></i>
             <a href="javascript:void(0)">
-              <img class="img-responsive" src="img/user-photo.png" alt="user photo" />
+                ianpansensoy
             </a>
+            <span class="pull-right badge">5</span>
           </li>
-          <li>
+           <li>
             <i class="fa fa-circle" aria-hidden="true"></i>
             <a href="javascript:void(0)">
-              <img class="img-responsive" src="img/user-photo.png" alt="user photo" />
+                ianpansensoy
             </a>
+            <span class="pull-right badge">5</span>
           </li>
-          <li>
+           <li>
             <i class="fa fa-circle" aria-hidden="true"></i>
             <a href="javascript:void(0)">
-              <img class="img-responsive" src="img/user-photo.png" alt="user photo" />
+                ianpansensoy
             </a>
+            <span class="pull-right badge">5</span>
           </li>
         </ul>
       </div>
     </div>
-    <div class="search-burger">
-      <div class="form-group clearfix">
-        <div class="icon-addon addon-sm">
-          <input type="text" placeholder="Search" class="form-control">
-          <label for="search" class="glyphicon glyphicon-search" rel="tooltip" title="search"></label>
-        </div>
-      </div>
-    </div>
+
     <div class="user-action-tabs">
       <ul class="nav nav-justified">
         <li class="active">
@@ -545,7 +544,317 @@
     </div>
   </div>
 </section>
+<div class="modal single-post-modal fade" id="single-post" tabindex="-1" role="dialog">
+  <div class="modal-dialog lg" role="document">
+    <div class="modal-content clearfix">
+     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="col-md-6 post-image unpadded">
+        <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail" />
+      </div>
+      <div class="col-md-6">
+        <div class="post-item">
+          <div class="post-item-content clearfix">
+            <div class="post-author-photo">
+              <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail" />
+            </div>
+            <div class="post-message">
+              <div class="post-content">
+                <div class="post-author">
+                  <a data-html="true" data-container="body" data-toggle="popover" data-placement="bottom" class="user-popover" href="javascript:void(0);">
+                    <h4>Steve Marks <span>@stevemarks</span></h4>
+                  </a>
+                  <div class="user-popover-content hide">
+                    <div class="popover-user-banner" style="background-image:url('../img/cover-photo.png')">
+                    </div>
+                    <div class="popupover-ranks">
+                      <div class="popover-user-photo">
+                        <div class="thumbnail">
+                          <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail">
+                        </div>
+                      </div>
+                      <div class="user-name">
+                        <h5>Jim Barben <br/><span>@jim_b</span></h5>
+                        <button class="btn-add" type="button"><i class="fa fa-user-plus" aria-hidden="true"></i></button>
+                      </div>
+                      <div class="address">
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i> Lives in Manila, Philippines</span>
+                      </div>
+                      <div class="ranks">
+                        <ul class="nav nav-justified">
+                          <li>
+                            <h5>
+                                1500
+                              </h5>
+                            <p>
+                              Posts
+                            </p>
+                          </li>
+                          <li>
+                            <h5>
+                                324
+                              </h5>
+                            <p>
+                              Following
+                            </p>
+                          </li>
+                          <li>
+                            <h5>
+                                643
+                              </h5>
+                            <p>
+                              Followers
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="action-tabs">
+                        <ul class="nav nav-justified">
+                          <li>
+                            <a href="#"><i class="fa fa-user" aria-hidden="true"></i> View Profile</a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fa fa-commenting" aria-hidden="true"></i> Start Chat</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true"></i> Just Now</span>
+                </div>
+                <div class="content" data-toggle="modal" data-target="#single-post">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repudiandae provident voluptatibus libero, nobis soluta reprehenderit adipisci recusandae dolor, similique repellendus. Error saepe dolorem animi alias officia vero maxime quas.
+                </div>
+                <div class="user-reactions bordered">
+                  <ul>
+                    <li>
+                      <a href=""><i class="fa fa-thumbs-up" aria-hidden="true"></i> 10 Likes</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa fa-comments" aria-hidden="true"></i> 243 Comments</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa fa-share" aria-hidden="true"></i> 10 Shares</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="comment-list clearfix">
+                <ul class="clearfix">
+                  <li class="clearfix comment-item">
+                    <div class="commenter-photo">
+                      <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail" />
+                    </div>
+                    <div class="commenter-content">
+                      <span class="author">
+                            <a data-html="true" data-container="body" data-toggle="popover" data-placement="bottom" class="user-popover" href="javascript:void(0);">Jim Barren</a>
+                             <div class="user-popover-content hide">Jim Baren</div>
+                          </span>
+                      <span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam delectus modi quis, architecto repudiandae dignissimos harum temporibus iusto eligendi cum vitae, repellendus voluptatem aperiam aliquid praesentium dolore tempore, dolor exercitationem.
+                          </span>
+                      <div class="comment-reactions">
+                        <ul>
+                          <li><a href="javascript:void(0)">Like</a></li>
+                          <li><a href="javascript:void(0)">Reply</a></li>
+                          <li><span>&#9679; Just Now</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="clearfix comment-item">
+                    <div class="commenter-photo">
+                      <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail" />
+                    </div>
+                    <div class="commenter-content">
+                      <span class="author">
+                            <a href="#">Jim Barren</a>
+                          </span>
+                      <span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam delectus modi quis, architecto repudiandae dignissimos harum temporibus iusto eligendi cum vitae, repellendus voluptatem aperiam aliquid praesentium dolore tempore, dolor exercitationem.
+                          </span>
+                      <div class="comment-reactions">
+                        <ul>
+                          <li><a href="javascript:void(0)">Like</a></li>
+                          <li><a href="javascript:void(0)">Reply</a></li>
+                          <li><span>&#9679; Just Now</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="reply-box clearfix comment-box">
+                  <div class="commenter-content">
+                    <div class="commenter-photo ">
+                      <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail" />
+                    </div>
+                    <textarea placeholder="Write a reply..." name="post-reply"></textarea>
+                    <button class="btn-send"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                    <button class="btn-send-files"><i class="fa fa-files-o" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
+<div class="modal single-post-modal fade" id="single-post-text" tabindex="-1" role="dialog">
+  <div class="modal-dialog sm" role="document">
+    <div class="modal-content clearfix">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+      <div class="col-md-12">
+        <div class="post-item">
+          <div class="post-item-content clearfix">
+            <div class="post-author-photo">
+              <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail" />
+            </div>
+            <div class="post-message">
+              <div class="post-content">
+                <div class="post-author">
+                  <a data-html="true" data-container="body" data-toggle="popover" data-placement="bottom" class="user-popover" href="javascript:void(0);">
+                    <h4>Steve Marks <span>@stevemarks</span></h4>
+                  </a>
+                  <div class="user-popover-content hide">
+                    <div class="popover-user-banner" style="background-image:url('../img/cover-photo.png')">
+                    </div>
+                    <div class="popupover-ranks">
+                      <div class="popover-user-photo">
+                        <div class="thumbnail">
+                          <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail">
+                        </div>
+                      </div>
+                      <div class="user-name">
+                        <h5>Jim Barben <br/><span>@jim_b</span></h5>
+                        <button class="btn-add" type="button"><i class="fa fa-user-plus" aria-hidden="true"></i></button>
+                      </div>
+                      <div class="address">
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i> Lives in Manila, Philippines</span>
+                      </div>
+                      <div class="ranks">
+                        <ul class="nav nav-justified">
+                          <li>
+                            <h5>
+                                1500
+                              </h5>
+                            <p>
+                              Posts
+                            </p>
+                          </li>
+                          <li>
+                            <h5>
+                                324
+                              </h5>
+                            <p>
+                              Following
+                            </p>
+                          </li>
+                          <li>
+                            <h5>
+                                643
+                              </h5>
+                            <p>
+                              Followers
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="action-tabs">
+                        <ul class="nav nav-justified">
+                          <li>
+                            <a href="#"><i class="fa fa-user" aria-hidden="true"></i> View Profile</a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fa fa-commenting" aria-hidden="true"></i> Start Chat</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="timestamp"><i class="fa fa-clock-o" aria-hidden="true"></i> Just Now</span>
+                </div>
+                <div class="content" data-toggle="modal" data-target="#single-post">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repudiandae provident voluptatibus libero, nobis soluta reprehenderit adipisci recusandae dolor, similique repellendus. Error saepe dolorem animi alias officia vero maxime quas.
+                </div>
+                <div class="user-reactions bordered">
+                  <ul>
+                    <li>
+                      <a href=""><i class="fa fa-thumbs-up" aria-hidden="true"></i> 10 Likes</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa fa-comments" aria-hidden="true"></i> 243 Comments</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa fa-share" aria-hidden="true"></i> 10 Shares</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="comment-list clearfix">
+                <ul class="clearfix">
+                  <li class="clearfix comment-item">
+                    <div class="commenter-photo">
+                      <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail" />
+                    </div>
+                    <div class="commenter-content">
+                      <span class="author">
+                            <a data-html="true" data-container="body" data-toggle="popover" data-placement="bottom" class="user-popover" href="javascript:void(0);">Jim Barren</a>
+                             <div class="user-popover-content hide">Jim Baren</div>
+                          </span>
+                      <span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam delectus modi quis, architecto repudiandae dignissimos harum temporibus iusto eligendi cum vitae, repellendus voluptatem aperiam aliquid praesentium dolore tempore, dolor exercitationem.
+                          </span>
+                      <div class="comment-reactions">
+                        <ul>
+                          <li><a href="javascript:void(0)">Like</a></li>
+                          <li><a href="javascript:void(0)">Reply</a></li>
+                          <li><span>&#9679; Just Now</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="clearfix comment-item">
+                    <div class="commenter-photo">
+                      <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail" />
+                    </div>
+                    <div class="commenter-content">
+                      <span class="author">
+                            <a href="#">Jim Barren</a>
+                          </span>
+                      <span>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam delectus modi quis, architecto repudiandae dignissimos harum temporibus iusto eligendi cum vitae, repellendus voluptatem aperiam aliquid praesentium dolore tempore, dolor exercitationem.
+                          </span>
+                      <div class="comment-reactions">
+                        <ul>
+                          <li><a href="javascript:void(0)">Like</a></li>
+                          <li><a href="javascript:void(0)">Reply</a></li>
+                          <li><span>&#9679; Just Now</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="reply-box clearfix comment-box">
+                  <div class="commenter-content">
+                    <div class="commenter-photo ">
+                      <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail" />
+                    </div>
+                    <textarea placeholder="Write a reply..." name="post-reply"></textarea>
+                    <button class="btn-send"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                    <button class="btn-send-files"><i class="fa fa-files-o" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- build:js js/vendor.js -->
 <!-- bower:js -->
 <script src="/bower_components/modernizr/modernizr.js"></script>

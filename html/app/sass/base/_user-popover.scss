@@ -108,3 +108,50 @@
     }
   }
 }
+
+.single-post-modal {
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    outline: none;
+    z-index: 99;
+  }
+
+  .modal-dialog {
+    &.lg {
+      width: 80%;
+    }
+
+    &.sm {
+      width: 40%;
+    }
+
+    textarea {
+      border: $border-color thin solid;
+      padding: 5px 10px;
+      padding-right: 35px;
+      height: 30px;
+      margin-top: 5px;
+      margin-left: 45px;
+      width: 82%;
+      resize: none;
+      background-color: transparent;
+      outline: none;
+      overflow: hidden;
+    }
+
+    .post-image {
+      background-color: #000;
+      height: 570px;
+
+      .img-responsive {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

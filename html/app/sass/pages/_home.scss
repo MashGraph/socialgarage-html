@@ -476,11 +476,11 @@
 .chat-box {
   width: 313px;
   position: fixed;
-  right: 130px;
+  right: 160px;
   display: flex;
   background-color: #fff;
   flex-direction: column;
-  z-index: 9999;
+  z-index: 99;
   border-left: $border-color thin solid;
   border-right: $border-color thin solid;
   top: 40px;
@@ -494,7 +494,7 @@
   height: 100%;
 
   .chat-user-list {
-    width: 130px;
+    width: 160px;
     background-color: #fff;
     z-index: 9999;
     position: fixed;
@@ -504,6 +504,10 @@
     z-index: 999999;
     border: $border-color thin solid;
     border-left: none;
+
+    .badge {
+      background-color: $main-theme-color;
+    }
 
     @media screen and (max-width: 767px) {
       top: 54%;
@@ -515,7 +519,9 @@
     }
 
     .title {
-      padding: 10px 20px;
+      padding: 15px;
+      text-align: center;
+      background-color: #e8e8e8;
       border-bottom: $border-color thin solid;
 
       span {
@@ -528,6 +534,7 @@
 
     .channel-list {
       border-bottom: $border-color thin solid;
+      padding: 3px;
 
       ul {
         li {
@@ -535,7 +542,7 @@
           padding: 5px 8px;
 
           &.active {
-            background-color: $main-theme-color;
+            background-color: $secondary-theme-color;
 
             a {
               color: #fff !important;
@@ -556,17 +563,25 @@
     }
 
     .direct-list {
+      padding: 3px;
+
       ul {
         li {
           position: relative;
-          margin-top: 25px;
-          margin-bottom: 25px;
+          border-radius: 3px;
+          padding: 5px;
+          display: block;
 
           i {
-            @include centerer(true, false);
+            position: absolute;
+            top: 10px;
+            color: $border-color;
+          }
 
-            bottom: -6px;
-            color: #b7b7b7;
+          &.has-recent {
+            a {
+              font-weight: 700;
+            }
           }
 
           &.online {
@@ -576,7 +591,8 @@
           }
 
           a {
-            display: block;
+            padding-left: 20px;
+            color: #3b4448 !important;
 
             img {
               width: 70px;
@@ -644,8 +660,7 @@
   }
 
   .user-action-tabs {
-    background-color: $secondary-theme-color;
-    padding: 4px;
+    background-color: $main-theme-color;
     color: #fff;
 
     ul {
