@@ -19,7 +19,8 @@
     "fancybox": {
       "main": [
         "source/*.css",
-        "source/jquery.fancybox.pack.js"
+        "source/jquery.fancybox.pack.js",
+        "lib/jquery.mousewheel-3.0.6.pack.js"
       ]
     },
     "jquery-slimscroll": {

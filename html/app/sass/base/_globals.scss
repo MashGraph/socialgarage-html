@@ -8,6 +8,11 @@ body {
 
 body {
   padding-top: 45px;
+
+  &.modal-open {
+    padding-right: 0 !important;
+    overflow: auto !important;
+  }
 }
 
 .unpadded {

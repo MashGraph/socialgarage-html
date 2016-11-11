@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 $(document).ready(function() {
   var wWidth = $(window).width();
   var curScrollHeight;
@@ -6,7 +6,7 @@ $(document).ready(function() {
     curScrollHeight = '81%';
   }
   if (wWidth >= 1024) {
-    curScrollHeight = '75%';
+    curScrollHeight = '80%';
   }
   if (wWidth <= 767) {
     curScrollHeight = '66%';
@@ -64,16 +64,22 @@ $(document).ready(function() {
 
   $('.user-popover').popover({
     html: true,
-    container:'.post-item',
+    container: '.post-item',
     trigger: 'click',
 
     content: function() {
-      return $(this).next('.user-popover-content').html()
+      return $(this).next('.user-popover-content').html();
 
     }
   });
 
-  $(".fancybox").fancybox();
+  $('.fancybox').fancybox({
+    helpers: {
+      overlay: {
+        locked: false
+      }
+    }
+  });
 
 
 });
