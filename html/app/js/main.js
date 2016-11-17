@@ -12,7 +12,24 @@ $(document).ready(function() {
     curScrollHeight = '66%';
   }
 
-  console.log(curScrollHeight);
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: -5,
+    nav: true,
+    items: 1
+  });
+
+  // $('#single-post').on('show', function(event) {
+  //   window.setTimeout(function() {
+  //     $('.pgwSlideshow').pgwSlideshow();
+  //   }, 0500);
+  // });
+  $('#single-post').on('shown.bs.modal', function() {
+
+    var pgwSlideshow = $('.pgwSlideshow').pgwSlideshow();
+
+
+  })
   $('#nav-icon1').click(function() {
     $(this).toggleClass('open');
     $('.chat-user-list').toggleClass('open');
@@ -64,7 +81,7 @@ $(document).ready(function() {
 
   $('.user-popover').popover({
     html: true,
-    container: '.post-item',
+    container: 'body',
     trigger: 'click',
 
     content: function() {

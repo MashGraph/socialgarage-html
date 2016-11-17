@@ -11,6 +11,8 @@
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="/bower_components/fancybox/source/jquery.fancybox.css" />
+  <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="/bower_components/pgwslideshow/pgwslideshow.css" />
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css css/main.css -->
@@ -522,7 +524,25 @@
     <div class="modal-content clearfix">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       <div class="col-md-6 post-image unpadded">
-        <img class="img-responsive" src="img/placeholder-image.png" alt="thumbnail" />
+        <!-- <div class="owl-carousel owl-theme">
+          <div class="item"> <img  src="img/placeholder-image.png" alt="thumbnail" />
+          </div>
+          <div class="item"> <img  src="img/placeholder-image.png" alt="thumbnail" />
+          </div>
+          <div class="item"> <img  src="img/placeholder-image.png" alt="thumbnail" />
+          </div>
+          <div class="item"> <img  src="img/placeholder-image.png" alt="thumbnail" />
+          </div>
+          <div class="item"> <img  src="img/placeholder-image.png" alt="thumbnail" />
+          </div>
+        </div> -->
+        <ul class="pgwSlideshow">
+          <li><img  class="image-responsive" src="http://placehold.it/570x570" /></li>
+          <li><img  class="image-responsive" src="img/placeholder-image.png" /></li>
+          <li><img  class="image-responsive" src="img/placeholder-image.png" /></li>
+          <li><img  class="image-responsive" src="img/placeholder-image.png" /></li>
+
+        </ul>
       </div>
       <div class="col-md-6">
         <div class="post-item">
@@ -833,6 +853,8 @@
 <script src="/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <script src="/bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
 <script src="/bower_components/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<script src="/bower_components/owl.carousel/dist/owl.carousel.js"></script>
+<script src="/bower_components/pgwslideshow/pgwslideshow.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 <!-- build:js js/plugins.js -->
