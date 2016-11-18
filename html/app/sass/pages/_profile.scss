@@ -57,9 +57,14 @@
   }
 
   .user-banner-cover {
-    width: 135px;
+    width: 100%;
 
     @include centerer(true, true);
+
+    .thumbnail {
+      width: 135px;
+      margin: 0 auto;
+    }
 
     .cover-name {
       text-align: center;
