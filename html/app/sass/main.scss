@@ -4,8 +4,8 @@ $icon-font-path: '../fonts/';
 ----------------------*/
 
 // bower:scss
-@import 'public/lib/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
-@import 'public/lib/font-awesome/scss/font-awesome.scss';
+@import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+@import 'bower_components/font-awesome/scss/font-awesome.scss';
 
 // endbower
 
@@ -45,6 +45,7 @@ $icon-font-path: '../fonts/';
 @import 'base/user-popover';
 @import 'base/globals';
 @import 'base/socials';
+@import "base/buttons";
 
 /*-----PAGES-------
 -----------------------*/
@@ -54,3 +55,4 @@ $icon-font-path: '../fonts/';
 @import 'pages/profile';
 @import 'pages/notifications';
 @import 'pages/landing';
+@import 'pages/page';

@@ -1,0 +1,25 @@
+.btn-main {
+  background-color: $main-btn;
+  border-radius: 2px;
+  border: none;
+  padding: 10px 15px;
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
+  // text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  transition: all 0.45s;
+
+
+  &:hover {
+    color: #fff;
+    background: linear-gradient(0deg, $main-btn-light, $main-btn-light 18px, $main-btn-light 10px, $main-btn-light 10px);
+  }
+
+  @media (max-width: 767px){}
+  @media (min-width: 768px) and (max-width: 1199px){}
+  @media (min-width: 1200px) {
+    width: 340px;
+    height: 55px;
+  }
+}
