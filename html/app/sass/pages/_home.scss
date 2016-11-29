@@ -17,7 +17,7 @@
 }
 
 .feed-data-list {
-  width: 505px;
+  width: 545px;
 
   @media only screen and (min-width: 768px) and (max-width: 1199px) {
     width: 65%;
@@ -40,15 +40,17 @@
   .user-thumbnail-content {
     @include centerer(true, false);
 
+    width: 100%;
     color: #fff;
     top: 30px;
     text-align: center;
 
     .thumbnail {
-      width: 128px;
+      width: 98px;
+      padding: 2px;
 
       img {
-        height: 128px;
+        height: 98px;
       }
 
       margin: 0 auto;
@@ -60,13 +62,18 @@
       margin: 0;
     }
   }
+
+  .user-counts {
+    margin-top: -50px;
+  }
 }
 
 .user-counts {
   background-color: #011111;
-  -webkit-box-shadow: 0px -55px 105px -20px rgba(1, 17, 17, 1);
-  -moz-box-shadow: 0px -55px 105px -20px rgba(1, 17, 17, 1);
-  box-shadow: 0px -55px 105px -20px rgba(1, 17, 17, 1);
+
+  // -webkit-box-shadow: 0px -55px 105px 0px rgba(1, 17, 17, 1);
+  // -moz-box-shadow: 0px -55px 105px 0px rgba(1, 17, 17, 1);
+  // box-shadow: 0px -55px 105px 0px rgba(1, 17, 17, 1);
 
   .nav {
     li {
@@ -105,9 +112,7 @@
     }
   }
 
-  .rank-list {
-    padding-top: 20px;
-  }
+  .rank-list {}
 
   .rank-content {
     width: 240px;
@@ -159,16 +164,24 @@
 .user-feed {
   margin-top: 0;
   padding-top: 0;
+  border: none;
+  background-color: #f3f7f8;
 
   .post-area {
-    border-bottom: $border-color thin solid;
+    border: $border-color thin solid;
+    margin-bottom: 15px;
+    background-color: #fff;
+
+    .content-post-area {
+      padding-top: 10px;
+    }
 
     .btn-post {
       @include centerer(false, true);
 
       right: 25px;
       padding: 5px 20px;
-      top: 32%;
+      top: 20px !important;
     }
 
     .extra-post-action {
@@ -200,21 +213,37 @@
     width: 80%;
     resize: none;
     background-color: transparent;
-    padding: 15px;
     outline: none;
     border: none;
-    height: 50px;
+    height: 30px;
+    padding: 0 15px;
     overflow: hidden;
   }
 }
 
 .post-item {
+  border: thin $border-color solid;
   border-bottom: thin $border-color solid;
+  background-color: #fff;
+
+  &:not(:last-child) {
+    border-bottom: none;
+  }
+
+  &.preview {
+    border: none;
+    padding: 10px;
+  }
 
   .uploaded-images {
+    padding-bottom: 15px;
+
     .upload-image {
       float: left;
-      padding: 5px;
+
+      img {
+        width: 100% !important;
+      }
 
       &.uploaded-image-1 {
         width: 100%;
@@ -245,21 +274,32 @@
     }
   }
 
-  &:last-child {
-    border-bottom: none;
-  }
-
   .post-author-photo,
   .commenter-photo {
     width: 50px;
     height: 50px;
     padding: 0;
     position: absolute;
+    z-index: 1000;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   .post-content {
-    padding-left: 45px;
+    padding-left: 35px;
     word-break: break-all;
+    background-color: #fff;
+
+    .content {
+      padding-bottom: 15px;
+
+      span {
+        font-size: 13px;
+      }
+    }
   }
 
   .post-item-content {
@@ -292,6 +332,10 @@
       .post-author {
         padding-bottom: 10px;
 
+        a {
+          font-size: 14px;
+        }
+
         @media screen and (max-width: 767px) {
           padding: 15px;
         }
@@ -321,8 +365,6 @@
   }
 
   .user-reactions {
-    margin-top: 15px;
-
     &.bordered {
       border-bottom: $border-color thin solid;
     }
@@ -355,15 +397,27 @@
 
     .author {
       color: $main-theme-color;
+      display: inline-block;
     }
 
     .comment-item {
       padding-top: 15px;
+      padding-bottom: 10px;
+
+      &:not(:last-child) {
+        border-bottom: #f1f1f1 1px solid;
+      }
 
       .commenter-photo {
         width: 40px;
         height: 40px;
         position: absolute;
+        overflow: hidden;
+
+        img {
+          width: 40px;
+          height: 40px;
+        }
 
         @media only screen and (max-width: 767px) {
           display: none;
@@ -373,6 +427,10 @@
       .commenter-content {
         padding-left: 50px;
         word-wrap: break-word;
+
+        span {
+          font-size: 13px;
+        }
 
         @media only screen and (min-width: 768px) and (max-width: 1199px) {
           width: 88% !important;
@@ -432,8 +490,8 @@
   }
 
   .commenter-content {
-    border: $border-color thin solid;
-    padding: 10px;
+    border: #e8e8e8 thin solid;
+    padding: 8px;
     background-color: #f9fbfb;
   }
 
@@ -460,6 +518,7 @@
     padding-right: 35px;
     height: 30px;
     margin-top: 5px;
+    background-color: #fff;
     margin-left: 45px;
   }
 
@@ -470,16 +529,22 @@
     outline: none;
     border: none;
     background-color: transparent;
-    right: 40px;
+    right: 30px;
+    position: relative;
+    top: 40%;
+    -webkit-transform: translate(0, -40%);
+    -ms-transform: translate(0, -40%);
+    transform: translate(0, -40%);
   }
 
   .btn-send-files {
     @include centerer(false, true);
 
+    top: -20px;
+    right: -5px;
     color: $main-theme-color;
     outline: none;
     font-size: 16px;
-    right: 5px;
     border: none;
     background-color: transparent;
   }
@@ -698,6 +763,7 @@
   .user-action-tabs {
     background-color: $main-theme-color;
     color: #fff;
+    height: 45px;
 
     ul {
       @media only screen and (max-width: 767px) {
@@ -708,6 +774,7 @@
         &.active {
           a {
             color: #c2c2c2 !important;
+            padding: 1px;
           }
         }
 
@@ -719,9 +786,10 @@
 
     a {
       color: #fff !important;
+      padding: 3px;
 
       i {
-        font-size: 23px;
+        font-size: 13px;
       }
 
       &:hover,
@@ -750,16 +818,25 @@
   }
 
   .user-chat-list {
-    padding: 30px 15px;
+    padding: 30px 15px 0;
 
     ul {
       li {
         margin-bottom: 15px;
 
+        &.pending {
+          color: #9a9a9a;
+        }
+
         .chat-user-photo {
           width: 36px;
           height: 36px;
           position: absolute;
+
+          img {
+            width: 36px;
+            height: 36px;
+          }
         }
 
         .chat-user-content {
@@ -801,9 +878,11 @@
       width: 90%;
       top: 45%;
 
-      input {
+      textarea {
         height: 40px;
-        text-indent: 10px;
+        resize: none;
+        padding-left: 35px;
+        padding-top: 10px;
       }
 
       a {
@@ -820,5 +899,19 @@
         font-size: 20px;
       }
     }
+  }
+
+  .chat-file-preview {
+    text-align: center;
+
+    img {
+      display: inline-block;
+    }
+  }
+}
+
+.file-preview {
+  .download {
+    color: #ffffff !important;
   }
 }

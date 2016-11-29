@@ -77,7 +77,7 @@
   .showcase {
     min-height: 700px;
     background-color: #20b7ce;
-    background-image: url('../img/landing/showcase-bg.jpg');
+    background-image: url('/assets/images/landing/showcase-bg.jpg');
     background-size: cover;
     display: flex;
     align-items: center;
@@ -200,7 +200,7 @@
   }
 
   .about-us {
-    background-image: url('../img/landing/about-us.jpg');
+    background-image: url('/assets/images/landing/about-us.jpg');
     min-height: 730px;
     display: flex;
     align-items: center;
@@ -601,7 +601,7 @@
   /*-----SPRITES----
   -----------------*/
   .icon-app-store-small {
-    background-image: url(../img/landing/sprites.png);
+    background-image: url(/assets/images/landing/sprites.png);
     background-position: 0px -46px;
     width: 137px;
     height: 46px;
@@ -612,7 +612,7 @@
   }
 
   .icon-google-play-small {
-    background-image: url(../img/landing/sprites.png);
+    background-image: url(/assets/images/landing/sprites.png);
     background-position: -137px -46px;
     width: 137px;
     height: 46px;

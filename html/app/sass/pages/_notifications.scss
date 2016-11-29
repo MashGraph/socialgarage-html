@@ -1,6 +1,25 @@
 .notification-list {
   padding: 0 15px !important;
 
+  &.chat-notif {
+    padding: 0 !important;
+
+    li {
+      padding: 0 15px;
+
+      &.loader, &.empty {
+        border-bottom: none;
+        padding-top: 15px;
+
+        &.more {
+          padding: 0;
+          margin: 5px 0 0;
+          min-height: 0;
+        }
+      }
+    }
+  }
+
   .header-underlined {
     border-bottom: $border-color thin solid;
     margin-left: -15px;
@@ -17,6 +36,9 @@
   .rank-list {
     li {
       min-height: 35px;
+      border-bottom: #d1d1d1 thin solid;
+      padding-bottom: 20px;
+      position: relative;
     }
   }
 
@@ -56,8 +78,9 @@
   }
 
   .button-action {
-    position: absolute;
-    right: 0;
+    @include centerer(false, true);
+
+    right: 15px;
     z-index: 999;
     outline: none;
 
@@ -92,4 +115,43 @@
       font-size: 16px;
     }
   }
+}
+
+.dropdown-menu {
+  .notification-list {
+    width: 500px !important;
+
+    .button-action {}
+
+    .rank-list {
+      li {
+        border: none;
+        margin: 0;
+        min-height: 0;
+        padding-bottom: 0;
+
+        .rank-content {
+          width: 100%;
+          padding-left: 55px;
+          margin-left: 0;
+
+          h3 {
+            small {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+
+    .see-all {
+      border-top: none;
+    }
+  }
+}
+
+.alert-danger {
+  border-radius: 0;
+  margin: 15px 15px;
+  padding: 3px;
 }

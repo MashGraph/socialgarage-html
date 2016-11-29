@@ -125,6 +125,14 @@
       width: 40%;
     }
 
+    .modal-content {
+      min-height: 630px;
+    }
+
+    .reply-box {
+      margin-top: 30px;
+    }
+
     textarea {
       border: $border-color thin solid;
       padding: 5px 10px;
@@ -139,13 +147,20 @@
       overflow: hidden;
     }
 
+    .post-item {
+      top: 15px;
+      border: none !important;
+    }
+
     .post-image {
       background-color: #000;
-      height: 570px;
+      height: 630px;
+      overflow: hidden;
 
       .img-responsive {
-        position: absolute;
+        position: relative;
         top: 50%;
+        margin: 0 auto;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);

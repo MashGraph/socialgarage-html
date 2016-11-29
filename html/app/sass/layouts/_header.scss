@@ -3,15 +3,33 @@
   height: 40px;
 }
 
+.dropdown-menu {
+  padding: 0 !important;
+  min-width: 300px;
+
+  li {
+    a {
+      font-size: 12px !important;
+      color: #000 !important;
+      margin: 0 !important;
+    }
+  }
+}
+
+.notification-badge {
+  position: absolute;
+  top: 5px;
+}
+
+.badge {
+  background-color: #f00;
+}
+
 .chat-toggle {
   font-size: 24px;
   color: #fff;
   right: 0;
   position: absolute;
-
-  .badge {
-    background-color: #f00;
-  }
 }
 
 .navbar-md {
@@ -20,6 +38,10 @@
   .navbar-brand {
     padding-top: 7px !important;
     height: 40px;
+
+    img {
+      max-height: 27px;
+    }
   }
 
   .navbar-brand,
