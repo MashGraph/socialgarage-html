@@ -23,3 +23,23 @@
     height: 55px;
   }
 }
+
+.btn-sub {
+  @include centerer(true, false);
+  width: 300px;
+  line-height: 65px;
+  padding: 10px 15px;
+  background-color: $main-btn;
+  border-radius: 2px;
+  border: none;
+  font-size: 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  transition: all 0.45s;
+  text-transform: none;
+  &:hover {
+    color: #fff;
+    background: linear-gradient(0deg, $main-btn-light, $main-btn-light 18px, $main-btn-light 10px, $main-btn-light 10px);
+  }
+}

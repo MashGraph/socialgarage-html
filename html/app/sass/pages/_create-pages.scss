@@ -1,24 +1,185 @@
+.margin-top-100{
+  margin-top: 100px;
+}
+.margin-top-80{
+  margin-top: 80px;
+}
+.margin-top-60{
+  margin-top: 60px;
+}
+.margin-top-50{
+  margin-top: 50px;
+}
+.margin-top-40{
+  margin-top: 40px;
+}
+.clear-pad{
+  padding: 0px!important;
+}
 .wrap {
     @include centerer(true, false);
 }
+.form-error{
+  text-align: center;
+  color: #c1272d;
+  i {
+    @include centerer(true, false);
+    top: 200px;
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+    border: 2px solid #c1272d;
+    border-radius: 50%;
+  }
+  p{
+    @include centerer(true, false);
+    width: 100%;
+    top: 250px;
+    font-size: 25px;
+  }
+}
 .block {
     position: relative;
-    margin-top: 100px;
     text-align: center;
     img {
         padding-bottom: 60px;
     }
-    h1{
-        padding-bottom: 55px;
+
+    .create-garage {
+      h1{
+        // padding-bottom: 55px;
         font-size: 50px;
         font-weight: 700;
+      }
+      h2{
+        padding-left: 200px;
+        padding-right: 200px;
+        font-size: 40px;
+      }
+      p {
+          margin-top: 80px;
+          font-size: 16px;
+          font-weight: bold;
+          padding: 0px 100px 55px 100px;
+      }
     }
-    p {
-        font-size: 14px;
-        font-weight: bold;
-        padding: 0px 100px 55px 100px;
-        // padding-bottom: 35px;
-        //asdas kajsdjas askdsajhdasj
+    .garage-name {
+      p {
+        margin-top: 40px;
+        font-size: 16px;
+        font-weight: 100;
+        padding: 0px;
+      }
+
+      form {
+        font-size: 16px;
+        text-align: left;
+        margin-top: 60px;
+      }
+      .form-group {
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      label {
+        font-size: 16px;
+      }
+      input {
+        height: 40px;
+        margin-bottom: 30px;
+        width: 100%;
+        // float: left;
+        // margin-right: 10px;
+      }
+      .form-error {
+        color: #a5a5a5;
+        font-size: 16px;
+        span{
+          // margin-top: -10px;
+          margin-left: 100px;
+          margin-right: 100px;
+          margin: 0px;
+        }
+      }
+
+    }
+
+    .set-pass {
+      h2 {
+        font-size: 40px;
+        font-family: 'Lato';
+      }
+      p {
+        margin-top: 35px;
+        font-size: 16px;
+        color: $main-font-color;
+        padding: 0px;
+        font-weight: 100;
+      }
+      form{
+        text-align: left;
+        margin-top: 60px;
+        @include centerer(true, false);
+          label {
+            font-size: 16px;
+          }
+          input {
+            padding-left: 15px;
+            width: 400px;
+            height: 50px;
+            font-size: 16px;
+          }
+          p {
+            // margin-top: 30px;
+            padding: 0px;
+            font-weight: 100;
+            color: #a5a5a5;
+            text-align: center;
+          }
+        .password-strength{
+          padding-top: 10px;
+          .very-weak {
+            float: left;
+            width: 97px;
+            color: #dddddd;
+            margin-right: 4px;
+            border-bottom: 4px solid #dddddd;
+          }
+          .weak {
+            float: left;
+            width: 97px;
+            color: #6f6f6f;
+            margin-right: 4px;
+            border-bottom: 4px solid #6f6f6f;
+          }
+          .meh {
+            float: left;
+            width: 97px;
+            color: #f26c4f;
+            margin-right: 4px;
+            border-bottom: 4px solid #f26c4f;
+          }
+          .awesome {
+            float: left;
+            width: 97px;
+            color: #00ff00;
+            border-bottom: 4px solid #00ff00;
+          }
+        }
+
+      }
+    }
+    .code-title {
+      margin-top: 30px;
+      font-size: 25px;
+      text-align: center;
+      color: $main-font-color;
+    }
+    .email {
+      margin-top: 30px;
+      font-size: 35px;
+      font-weight: bold;
+      color: $main-font-color;
+      text-align: center;
+      // @include centerer(true, false);
     }
     .note {
         // position: absolute;
@@ -30,6 +191,54 @@
         a {
             color: $main-btn;
         }
+    }
+
+    .code-title {
+      margin-top: 95px;
+    }
+
+    .form-code {
+      text-align: center;
+      margin-top: 30px;
+      // margin-bottom: 100px;
+
+      .form-group{
+        width: 100%;
+        // @include centerer(false, true);
+
+        // @media (max-width: 767px) {
+        //   // padding-bottom: 50px;
+        // }
+
+        // @media (min-width: 1024px) {
+        //   // padding-left: 50px;
+        // }
+
+        @media screen and (min-width: 1200px){
+          margin-left: 95px;
+        }
+      }
+      input {
+        padding-right: 20px;
+        padding-left: 20px;
+        float: left;
+        text-align: center;
+        font-size: 60px;
+        width: 70px;
+        height: 100px;
+        margin-right: 10px;
+        // line-height: 100px;
+      }
+      form {
+        font-size: 30px;
+
+      }
+      span {
+        padding-top: 15px;
+        padding-right: 10px;
+        float: left;
+        font-size: 50px;
+      }
     }
 }
 
