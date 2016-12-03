@@ -26,7 +26,7 @@
 
 .btn-sub {
   @include centerer(true, false);
-  width: 300px;
+  min-width: 320px;
   line-height: 65px;
   padding: 10px 15px;
   background-color: $main-btn;
@@ -43,3 +43,66 @@
     background: linear-gradient(0deg, $main-btn-light, $main-btn-light 18px, $main-btn-light 10px, $main-btn-light 10px);
   }
 }
+.btn-small {
+  border: 2px solid $main-btn;
+  line-height: 55px;
+  padding: 10px 15px;
+  background-color: $main-btn;
+  border-radius: 2px;
+  font-size: 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  transition: all 0.45s;
+  text-transform: none;
+  &:hover {
+    color: #fff;
+    background: linear-gradient(0deg, $main-btn-light, $main-btn-light 18px, $main-btn-light 10px, $main-btn-light 10px);
+  }
+}
+
+.btn-small-light {
+  // min-width: 195px;
+  line-height: 55px;
+  padding: 10px 15px;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 2px solid #a6a6a6;
+  font-size: 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: #a6a6a6;
+  transition: all 0.45s;
+  text-transform: none;
+  &:hover {
+    color: $main-btn-light;
+    text-shadow: none;
+  }
+}
+
+.btn-drop{
+  width: 400px;
+  background-color: #fff;
+  color: #636363;
+  text-align: left;
+  height: 50px;
+  font-size: 16px;
+  border: 1px solid #bdc7d8;
+  span {
+    float: right;
+    padding: 5px;
+  }
+
+  &:hover {
+    color: #636363;
+    background: #fff;
+    box-shadow: none;
+    outline-color: none;
+    outline-offset: none;
+    text-shadow: none;
+  }
+  &:active {
+    box-shadow: none;
+  }
+}
+

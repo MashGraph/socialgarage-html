@@ -1,0 +1,52 @@
+@@include('./global/header.html')
+
+<section class="wrap">
+    <div class="block margin-top-50">
+        <div class="create-team">
+            <img src="img/sg-logo-sm.png" alt="">
+            <h2>What web domain do you want for your Social Garage team?</h2>
+            <p class="margin-top-60">Choose the address you’ll use to sign in to Slack.</p>
+            <p><b>Your team domain</b> (letters, numbers, and dashes only)</p>
+            <form action="">
+                <div class="form-group">
+                    <input type="text" placeholder="team-name" class="form-control"> <div class="domain">.socialgarage.com</div>
+                </div><br>
+                <div class="domain-suggest">
+                    <p class="chosen-domain"><i >team-name.socialgarage.com</i> is already taken, how about...</p>
+                    <ul>
+                        <li>your-team1.socialgarage.com</li>
+                        <li>your-team2.socialgarage.com</li>
+                        <li>your-team3.socialgarage.com</li>
+                    </ul>
+                </div>
+                <button class="btn btn-sub margin-top-35">Create Team </button>
+            </form>
+        </div>
+        <!-- The Modal -->
+      <button type="button" class="" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+    </div>
+</section>
+
+@@include('./global/footer.html')
