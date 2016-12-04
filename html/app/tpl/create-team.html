@@ -19,34 +19,28 @@
                         <li>your-team3.socialgarage.com</li>
                     </ul>
                 </div>
-                <button class="btn btn-sub margin-top-35">Create Team </button>
+                <button type="button" class="btn btn-sub margin-top-35" id="btn-terms">
+                  Create Team
+                </button>
             </form>
+
         </div>
-        <!-- The Modal -->
-      <button type="button" class="" data-toggle="modal" data-target="#myModal">Open Modal</button>
+        <div id="terms" class="modal">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h4>Review the Terms</h4>
+              <p>
+                By clicking <b>“I Agree”</b>, you understand and agree to the Contract on behalf of Customer (as described in our Customer Terms of Service), and to our Privacy Policy.
+              </p>
 
-        <!-- Modal -->
-        <div id="myModal" class="modal fade" role="dialog">
-          <div class="modal-dialog">
+              <button class="btn btn-sub" id="btn-terms">I agree</button>
 
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
-              </div>
-              <div class="modal-body">
-                <p>Some text in the modal.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
             </div>
-
           </div>
-        </div>
 
+        </div>
     </div>
+
 </section>
 
 @@include('./global/footer.html')

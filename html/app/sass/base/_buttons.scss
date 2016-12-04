@@ -36,13 +36,36 @@
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   color: #fff;
-  transition: all 0.45s;
+  // transition: all 0.45s;
   text-transform: none;
-  &:hover {
+  &:hover, &:active{
     color: #fff;
     background: linear-gradient(0deg, $main-btn-light, $main-btn-light 18px, $main-btn-light 10px, $main-btn-light 10px);
+    border: none;
   }
 }
+.btn-modal {
+  @include centerer(true, false);
+  min-width: 320px;
+  line-height: 65px;
+  min-height: 65px;
+  padding: 10px 15px;
+  background-color: $main-btn;
+  border-radius: 2px;
+  border: none;
+  font-size: 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  // transition: all 0.45s;
+  text-transform: none;
+  &:hover, &:active{
+    color: #fff;
+    background: linear-gradient(0deg, $main-btn-light, $main-btn-light 18px, $main-btn-light 10px, $main-btn-light 10px);
+    border: none;
+  }
+}
+
 .btn-small {
   min-width: 195px;
   border: 2px solid $main-btn;

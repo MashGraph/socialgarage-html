@@ -457,6 +457,7 @@
   </div>
 </div>
 <!-- build:js js/vendor.js -->
+
 <!-- bower:js -->
 <script src="/bower_components/modernizr/modernizr.js"></script>
 <script src="/bower_components/jquery/dist/jquery.js"></script>
@@ -466,6 +467,8 @@
 <script src="/bower_components/owl.carousel/dist/owl.carousel.js"></script>
 <script src="/bower_components/pgwslideshow/pgwslideshow.js"></script>
 <!-- endbower -->
+
+
 <!-- endbuild -->
 <!-- build:js js/plugins.js -->
 <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
@@ -484,6 +487,21 @@
 <!-- build:js js/main.js -->
 <script src="js/main.js"></script>
 <!-- endbuild -->
+<script>
+var modal = document.getElementById('terms');
+var btn = document.getElementById("btn-terms");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "block";
+    }
+}
+</script>
 </body>
 
 </html>
