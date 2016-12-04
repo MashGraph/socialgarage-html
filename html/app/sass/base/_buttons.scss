@@ -44,6 +44,7 @@
   }
 }
 .btn-small {
+  min-width: 195px;
   border: 2px solid $main-btn;
   line-height: 55px;
   padding: 10px 15px;
@@ -62,7 +63,7 @@
 }
 
 .btn-small-light {
-  // min-width: 195px;
+  min-width: 195px;
   line-height: 55px;
   padding: 10px 15px;
   background-color: transparent;
