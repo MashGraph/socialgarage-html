@@ -63,9 +63,10 @@
 
 
 <section class="wrap">
-    <div class="block margin-top-100">
+    <div class="container">
+      <div class="block margin-top-50">
         <div class="create-garage">
-          <img src="img/sg-logo.png" alt="">
+          <img src="img/sg-logo.png" class="img-responsive" alt="">
           <h1>Lets invent the future!</h1>
           <p class="margin-top-80">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo laudantium vero voluptatum, eius maxime, rem eos culpa eligendi tempora, iure facere quod, omnis assumenda laboriosam.</p>
 
@@ -81,6 +82,7 @@
               Your team already uses Social Garage? <a href="">Sign in</a> or <a href="">find your team</a>.
           </div>
         </div>
+      </div>
     </div>
 </section>
 
@@ -446,7 +448,20 @@
   </div>
 </div>
 <!-- build:js js/vendor.js -->
+<div id="terms" class="modal fade">
+  <div class="modal-content">
+    <div class="modal-body">
+      <h4>Review the Terms</h4>
+      <p>
+        By clicking <b>“I Agree”</b>, you understand and agree to the Contract on behalf of Customer (as described in our Customer Terms of Service), and to our Privacy Policy.
+      </p>
 
+      <button class="btn btn-sub" id="btn-terms">I agree</button>
+
+    </div>
+  </div>
+
+</div>
 <!-- bower:js -->
 <script src="/bower_components/modernizr/modernizr.js"></script>
 <script src="/bower_components/jquery/dist/jquery.js"></script>

@@ -25,19 +25,15 @@
 .clear-pad{
   padding: 0px!important;
 }
-.wrap {
-    @include centerer(true, false);
-}
 
 //start modal
 .modal {
-  @include centerer(true, true);
-  top: 100px;
+  @extend .center-item;
   margin-top: 220px;
-  width: 600px;
-  height: 700px;
+  max-width: 600px;
+  max-height: 700px;
   .modal-content{
-    height: 500px;
+    max-height: 500px;
   }
   .modal-body {
     padding-top: 115px;
@@ -52,30 +48,402 @@
 }
 
 //end modal
-.form-error{
-  text-align: center;
-  color: #c1272d;
-  i {
-    @include centerer(true, false);
-    top: 200px;
-    font-size: 12px;
-    padding: 5px 10px 5px 10px;
-    border: 2px solid #c1272d;
-    border-radius: 50%;
-  }
-  p{
-    @include centerer(true, false);
-    width: 100%;
-    top: 250px;
-    font-size: 25px;
-  }
-}
+
 
 .block {
     position: relative;
     text-align: center;
+    .center-main {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 150px;
+      max-width: 600px;
+    }
+    .center-item {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
     img {
-        padding-bottom: 60px;
+        @extend .center-item;
+        margin-bottom: 80px;
+      }
+    h1{
+        font-size: 50px;
+        font-weight: 700;
+      }
+    .create-garage {
+      h2{
+        padding-left: 200px;
+        padding-right: 200px;
+        font-size: 40px;
+      }
+      p {
+          @extend .center-item;
+          margin-top: 80px;
+          font-size: 16px;
+          font-weight: 200;
+          padding: 0px 10px 55px 10px;
+          max-width: 600px;
+      }
+      .block-form {
+        @extend .center-item;
+        max-width: 600px;
+        height: 200px;
+        background-color: $form-box-color;
+        margin-bottom: 20px;
+          .form-group {
+            @include centerer(true, true);
+            input{
+                max-width: 340px;
+                height: 50px;
+                text-align: center;
+                font-size: 25px;
+            }
+          }
+      }
+      .note {
+        font-size: 16px;
+        width: 100%;
+        color: $main-font-color;
+        a {
+            color: $main-btn;
+        }
+      }
+    }
+    .confirm {
+      @extend .center-main;
+      img{
+        margin-bottom: 70px;
+      }
+      h2 {
+        font-size: 40px;
+      }
+      form {
+        width: 625px;
+      }
+      .code-title {
+        margin-top: 50px;
+        font-size: 25px;
+        text-align: center;
+        color: $main-font-color;
+      }
+      .email {
+        margin-top: 30px;
+        font-size: 35px;
+        font-weight: bold;
+        color: $main-font-color;
+        text-align: center;
+        // @include centerer(true, false);
+      }
+      .form-error{
+        text-align: center;
+        color: #c1272d;
+        margin-top: 200px;
+        i {
+          font-size: 12px;
+          padding: 5px 10px 5px 10px;
+          margin-bottom: 25px;
+          border: 2px solid #c1272d;
+          border-radius: 50%;
+        }
+        p{
+          width: 100%;
+          font-size: 25px;
+        }
+      }
+      .form-code {
+        max-width: 600px;
+        text-align: center;
+        margin-top: 30px;
+        display: block;
+        .form-group{
+          width: 100%;
+        }
+        input {
+          float: left;
+          text-align: center;
+          font-size: 60px;
+          width: 70px;
+          height: 100px;
+          margin-right: 10px;
+          @media screen and (max-width: 414px) {
+            width: 40px;
+            height: 70px;
+            margin-right: 0px;
+          }
+        }
+
+        form {
+          font-size: 30px;
+
+        }
+        span {
+          padding-top: 15px;
+          padding-right: 10px;
+          float: left;
+          font-size: 50px;
+          @media screen and (max-width: 414px) {
+            padding-top: 0px;
+          }
+        }
+      }
+    }
+    .garage-name {
+      @extend .center-main;
+
+      p {
+        margin-top: 40px;
+        font-size: 16px;
+        font-weight: 100;
+        padding: 0px;
+      }
+        form {
+          font-size: 16px;
+          text-align: left;
+          margin-top: 60px;
+          label {
+            padding-left: 17px;
+            margin-bottom: 12px;
+          }
+          input{
+            max-width: 295px;
+            height: 40px;
+            float: left;
+            margin-left: 5px;
+            margin-bottom: 30px;
+            @media screen and (max-width: 414px) {
+              max-width: 100%;
+            }
+          }
+          p{
+            padding-left: 14px;
+            padding-right: 14px;
+            font-size: 16px;
+            color: #a5a5a5;
+          }
+          button {
+            @extend .center-item;
+          }
+          .full-width {
+            input{
+              max-width: 99%!important;
+              @media screen and (max-width: 414px) {
+                width: 100%;
+              }
+            }
+          }
+        }
+    }
+    .set-pass {
+      @extend .center-main;
+      h2 {
+        font-size: 40px;
+        font-family: 'Lato';
+      }
+      p {
+        margin-top: 35px;
+        font-size: 16px;
+        color: $main-font-color;
+        padding: 0px;
+        font-weight: 100;
+      }
+      form{
+        margin-top: 60px;
+        label {
+          font-size: 16px;
+        }
+        input {
+          @extend .center-item;
+          padding-left: 15px;
+          max-width: 400px;
+          height: 50px;
+          font-size: 16px;
+          @media screen and (max-width: 414){
+            width: 100%;
+          }
+        }
+        button {
+          @extend .center-item;
+        }
+        p {
+          @extend .center-item;
+          padding-top: 35px;
+          max-width: 400px;
+          font-weight: 100;
+          color: #a5a5a5;
+          text-align: center;
+        }
+        .password-strength{
+          @extend .center-item;
+          max-width: 400px;
+          .very-weak {
+            float: left;
+            width: 24%;
+            color: #dddddd;
+            margin-right: 4px;
+            border-bottom: 4px solid #dddddd;
+          }
+          .weak {
+            float: left;
+            width: 24%;
+            color: #6f6f6f;
+            margin-right: 4px;
+            border-bottom: 4px solid #6f6f6f;
+          }
+          .meh {
+            float: left;
+            width: 24%;
+            color: #f26c4f;
+            margin-right: 4px;
+            border-bottom: 4px solid #f26c4f;
+          }
+          .awesome {
+            float: left;
+            width: 24%;
+            color: #00ff00;
+            border-bottom: 4px solid #00ff00;
+          }
+        }
+
+      }
+    }
+    .team-input {
+      @extend .center-main;
+      max-width: 400px;
+      h2 {
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Lato';
+      }
+      label {
+          // text-align: left!important;
+          font-size: 16px;
+          font-weight: 100;
+        }
+      select {
+        @extend .center-item;
+        margin-bottom: 20px;
+        height: 50px;
+        width: 400px;
+        font-size: 16px;
+        color: $input-color;
+        text-indent: 0.01px;
+        text-overflow: '';
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: #fff url("../img/caret-down.png") no-repeat 96% 50%;
+        background-size: 20px 20px;
+        }
+      form {
+        button {
+          @extend .center-item;
+        }
+        label {
+          margin-bottom: 13px;
+          font-size: 16px;
+        }
+        margin-top: 35px;
+        text-align: left;
+      }
+    }
+
+    .garage-company {
+      @extend .center-main;
+      h2 {
+
+        font-size: 40px;
+      }
+      form {
+        max-width: 400px;
+        margin-top: 37px;
+        text-align: left;
+        @extend .center-item;
+        button {
+          @extend .center-item;
+        }
+        p {
+          font-size: 16px;
+          color: #a6a6a6;
+        }
+        label {
+          margin-bottom: 15px;
+          font-size: 16px;
+        }
+        input {
+          padding-left: 15px;
+          margin-bottom: 20px;
+          max-width: 400px;
+          height: 50px;
+          font-size: 16px;
+          @media screen and (max-width: 414){
+            width: 100%;
+          }
+        }
+      }
+    }
+    .create-team {
+      @extend .center-main;
+      h2 {
+        font-size: 40px;
+      }
+      p {
+        color: #a6a6a6;
+        font-size: 16px;
+        b {
+          color: #303838;
+        }
+      }
+      form {
+        @extend .center-item;
+        max-width: 400px;
+        margin-top: 45px;
+        .form-group {
+          .domain {
+            float: right;
+            width: 35%;
+            padding: 10px;
+            font-size: 16px;
+            color: $input-color;
+            @media screen and (max-width: 375px){
+              width: 40%;
+              font-size: 14px;
+            }
+          }
+          input {
+            @extend .center-item;
+            float: left;
+            max-width: 65%;
+            line-height: 50px;
+            height: 50px;
+            font-size: 16px;
+            @media screen and (max-width: 375px){
+              width: 60%;
+            }
+          }
+        }
+        .domain-suggest {
+          text-align: left;
+          margin-top: 35px;
+          padding-top: 35px;
+          padding-left: 25px;
+          .chosen-domain {
+            color: $main-font-color;
+            font-style: italic;
+            i {
+              font-weight: bold;
+            }
+          }
+          ul {
+            color: $main-btn;
+            text-align: left;
+            font-size: 16px;
+            font-weight: bold;
+          }
+        }
+      }
     }
     .garage-invites {
       form {
@@ -182,311 +550,19 @@
     }
 
 
-    .create-garage {
-      h1{
-        // padding-bottom: 55px;
-        font-size: 50px;
-        font-weight: 700;
-      }
-      h2{
-        padding-left: 200px;
-        padding-right: 200px;
-        font-size: 40px;
-      }
-      p {
-          margin-top: 80px;
-          font-size: 16px;
-          font-weight: bold;
-          padding: 0px 100px 55px 100px;
-      }
-    }
-    .garage-name {
-      p {
-        margin-top: 40px;
-        font-size: 16px;
-        font-weight: 100;
-        padding: 0px;
-      }
-
-      form {
-        font-size: 16px;
-        text-align: left;
-        margin-top: 60px;
-      }
-      .form-group {
-        padding-left: 60px;
-        padding-right: 60px;
-      }
-      label {
-        font-size: 16px;
-      }
-      input {
-        height: 40px;
-        margin-bottom: 30px;
-        width: 100%;
-      }
-      .form-error {
-        color: #a5a5a5;
-        font-size: 16px;
-        span{
-          margin-left: 100px;
-          margin-right: 100px;
-          margin: 0px;
-        }
-      }
 
 
-    }
 
-    .set-pass {
-      h2 {
-        font-size: 40px;
-        font-family: 'Lato';
-      }
-      p {
-        margin-top: 35px;
-        font-size: 16px;
-        color: $main-font-color;
-        padding: 0px;
-        font-weight: 100;
-      }
-      form{
-        text-align: left;
-        margin-top: 60px;
-        @include centerer(true, false);
-          label {
-            font-size: 16px;
-          }
-          input {
-            padding-left: 15px;
-            width: 400px;
-            height: 50px;
-            font-size: 16px;
-          }
-          p {
-            // margin-top: 30px;
-            padding: 0px;
-            font-weight: 100;
-            color: #a5a5a5;
-            text-align: center;
-          }
-        .password-strength{
-          padding-top: 10px;
-          .very-weak {
-            float: left;
-            width: 97px;
-            color: #dddddd;
-            margin-right: 4px;
-            border-bottom: 4px solid #dddddd;
-          }
-          .weak {
-            float: left;
-            width: 97px;
-            color: #6f6f6f;
-            margin-right: 4px;
-            border-bottom: 4px solid #6f6f6f;
-          }
-          .meh {
-            float: left;
-            width: 97px;
-            color: #f26c4f;
-            margin-right: 4px;
-            border-bottom: 4px solid #f26c4f;
-          }
-          .awesome {
-            float: left;
-            width: 97px;
-            color: #00ff00;
-            border-bottom: 4px solid #00ff00;
-          }
-        }
 
-      }
-    }
-    .team-input {
-      text-align: left;
-      select {
-        margin-bottom: 20px;
-        height: 50px;
-        width: 400px;
-        font-size: 16px;
-        color: $input-color;
-          text-indent: 0.01px;
-          text-overflow: '';
-          -webkit-appearance: none;
-          -moz-appearance: none;
-          appearance: none;
-          background: #fff url("../img/caret-down.png") no-repeat 96% 50%;
-          background-size: 20px 20px;
-          // background: #fff url("../img/caret-down.png") no-repeat right center;
-        }
-      form {
-        label {
-          margin-bottom: 13px;
-          font-size: 16px;
-        }
-        @include centerer(true, false);
-        margin-top: 35px;
-        text-align: left;
 
-      }
-    }
-    .confirm {
-      form {
-        // @include centerer(true, false);
-        width: 625px;
-        // float: left;
-      }
-    }
-    .create-team {
-      h2 {
-        padding-left: 100px;
-        padding-right: 100px;
-        font-size: 40px;
-      }
-      p {
-        color: #a6a6a6;
-        font-size: 16px;
-        b {
-          color: #303838;
-        }
-      }
-      form {
-        @include centerer(true, false);
-        margin-top: 45px;
-        .domain {
-          float: left;
-          padding: 10px;
-          font-size: 16px;
-          color: $input-color;
-        }
-        input {
-          float: left;
-          width: 260px;
-          line-height: 50px;
-          height: 50px;
-          font-size: 16px;
-        }
-        .domain-suggest {
-          margin-top: 35px;
-          .chosen-domain {
-            color: $main-font-color;
-            font-style: italic;
-            i {
-              font-weight: bold;
-            }
-          }
-          ul {
-            color: $main-btn;
-            text-align: left;
-            font-size: 16px;
-            font-weight: bold;
-          }
-        }
-      }
-    }
-    .garage-company {
-      // @include centerer(true, false);
-      h2 {
-        padding-left: 100px;
-        padding-right: 100px;
-        font-size: 40px;
-      }
-      form {
-        @include centerer(true, false);
-        margin-top: 37px;
-        text-align: left;
-        p {
-          font-size: 16px;
-          color: #a6a6a6;
-        }
-        label {
-          margin-bottom: 15px;
-          font-size: 16px;
-        }
-        input {
-          padding-left: 15px;
-          margin-bottom: 20px;
-          width: 400px;
-          height: 50px;
-          font-size: 16px;
-        }
-      }
-    }
 
-    .code-title {
-      margin-top: 30px;
-      font-size: 25px;
-      text-align: center;
-      color: $main-font-color;
-    }
-    .email {
-      margin-top: 30px;
-      font-size: 35px;
-      font-weight: bold;
-      color: $main-font-color;
-      text-align: center;
-      // @include centerer(true, false);
-    }
-    .note {
-        // position: absolute;
-        font-size: 16px;
-        @include centerer(true, false);
-        bottom: -251px;
-        width: 100%;
-        color: $main-font-color;
-        a {
-            color: $main-btn;
-        }
-    }
+
 
     .code-title {
       margin-top: 95px;
     }
 
-    .form-code {
-      text-align: center;
-      margin-top: 30px;
 
-      .form-group{
-        width: 100%;
-      }
-      input {
-        padding-right: 20px;
-        padding-left: 20px;
-        float: left;
-        text-align: center;
-        font-size: 60px;
-        width: 70px;
-        height: 100px;
-        margin-right: 10px;
-      }
-      form {
-        font-size: 30px;
-
-      }
-      span {
-        padding-top: 15px;
-        padding-right: 10px;
-        float: left;
-        font-size: 50px;
-      }
-    }
 }
 
-.block-form {
-    // position: relative;
-    width: 600px;
-    height: 200px;
-    background-color: $form-box-color;
-    @include centerer(true, false);
-    .form-group {
-        @include centerer(true, true);
-        input{
-            width: 340px;
-            height: 50px;
-            text-align: center;
-            font-size: 25px;
-        }
-    }
-}
+

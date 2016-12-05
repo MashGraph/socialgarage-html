@@ -63,6 +63,7 @@
 
 
 <section class="wrap">
+  <div class="container">
     <div class="block margin-top-50">
         <div class="confirm">
           <img src="img/sg-logo-sm.png" alt="">
@@ -73,26 +74,27 @@
           <div class="code-title">
               Enter it below to confirm your email address.
           </div>
-          <div class="form-code">
-              <form action="">
-                  <div class="form-group">
-                      <input type="text" class="form-control" maxlength="1"> <span>-</span>
-                      <input type="text" class="form-control" maxlength="1"><span>-</span>
-                      <input type="text" class="form-control" maxlength="1"><span>-</span>
-                      <input type="text" class="form-control" maxlength="1"><span>-</span>
-                      <input type="text" class="form-control" maxlength="1"><span>-</span>
-                      <input type="text" class="form-control" maxlength="1">
-                  </div>
+            <div class="form-code">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control" maxlength="1"> <span>-</span>
+                        <input type="text" class="form-control" maxlength="1"><span>-</span>
+                        <input type="text" class="form-control" maxlength="1"><span>-</span>
+                        <input type="text" class="form-control" maxlength="1"><span>-</span>
+                        <input type="text" class="form-control" maxlength="1"><span>-</span>
+                        <input type="text" class="form-control" maxlength="1">
+                    </div>
+                </form>
 
-              </form>
-
-          </div>
+            </div>
+            <div class="form-error">
+              <i class="fa fa-exclamation" aria-hidden="true"></i>
+              <p>You have entered an invalid code. Please try it again.</p>
+            </div>
         </div>
     </div>
-    <div class="form-error">
-        <i class="fa fa-exclamation" aria-hidden="true"></i>
-        <p>You have entered an invalid code. Please try it again.</p>
-    </div>
+
+  </div>
 </section>
 
 <div class="modal single-post-modal fade" id="single-post" tabindex="-1" role="dialog">
@@ -457,7 +459,20 @@
   </div>
 </div>
 <!-- build:js js/vendor.js -->
+<div id="terms" class="modal fade">
+  <div class="modal-content">
+    <div class="modal-body">
+      <h4>Review the Terms</h4>
+      <p>
+        By clicking <b>“I Agree”</b>, you understand and agree to the Contract on behalf of Customer (as described in our Customer Terms of Service), and to our Privacy Policy.
+      </p>
 
+      <button class="btn btn-sub" id="btn-terms">I agree</button>
+
+    </div>
+  </div>
+
+</div>
 <!-- bower:js -->
 <script src="/bower_components/modernizr/modernizr.js"></script>
 <script src="/bower_components/jquery/dist/jquery.js"></script>

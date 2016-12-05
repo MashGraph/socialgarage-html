@@ -1,28 +1,29 @@
 @@include('./global/header.html')
 
 <section class="wrap">
+  <div class="container">
     <div class="block margin-top-50">
         <div class="garage-name">
             <img src="img/sg-logo-sm.png" alt="">
             <h2>A man needs a name.</h2>
             <p>Your name will be displayed along  with your messages in Social Garage.</p>
             <form action="">
-                <div class="col-md-6"><label for="fame">Your Name</label>
-                <input type="text" class="form-control" placeholder="First Name"></div>
-                <div class="col-md-6">
-                    <label for="fame">&nbsp;    </label>
-                    <input type="text" class="form-control" placeholder="Last Name"></div>
+                <label for="fname">Your Name</label>
+              <div class="form-group">
+                <input type="text" class="form-control" name="fname" placeholder="First Name">
+                <input type="text" class="form-control" placeholder="Last Name">
+              </div>
+                <label for="fname">Username</label>
+              <div class="form-group full-width">
+                <input type="text" class="form-control" name="fname" placeholder="Username">
+              </div>
 
-                <div class="col-md-12">
-                <!-- <label for="fame">Username</label> -->
-                <input type="text" class="form-control" placeholder="Username"></div>
-                <div class="form-error">
-                    <span>Usernames must be all lowercase, with no spaces. They can only contain letters,  numbers, periods, hyphens, and underscores.</span>
-                </div>
-                <button class="btn btn-sub margin-top-60">Continue to Password</button>
+              <p> Usernames must be all lowercase, with no spaces. They can only contain letters, numbers, periods, hyphens, and underscores.</p>
+              <button class="btn btn-sub margin-top-60">Continue to Password</button>
             </form>
         </div>
     </div>
+  </div>
 </section>
 
 @@include('./global/footer.html')
