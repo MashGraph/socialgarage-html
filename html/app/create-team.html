@@ -63,7 +63,6 @@
 
 
 <section class="wrap">
-  <div class="container">
     <div class="block margin-top-50">
         <div class="create-team">
             <img src="img/sg-logo-sm.png" alt="">
@@ -72,8 +71,7 @@
             <p><b>Your team domain</b> (letters, numbers, and dashes only)</p>
             <form action="">
                 <div class="form-group">
-                    <input type="text" placeholder="team-name" class="form-control">
-                    <div class="domain">.socialgarage.com</div>
+                    <input type="text" placeholder="team-name" class="form-control"> <div class="domain">.socialgarage.com</div>
                 </div><br>
                 <div class="domain-suggest">
                     <p class="chosen-domain"><i >team-name.socialgarage.com</i> is already taken, how about...</p>
@@ -83,13 +81,14 @@
                         <li>your-team3.socialgarage.com</li>
                     </ul>
                 </div>
-                <button type="button" class="btn btn-sub margin-top-35" id="btn-terms">
+                <button type="button" class="btn btn-sub margin-top-35" data-toggle="modal" data-target="#myModal">
                   Create Team
                 </button>
             </form>
 
         </div>
-        <div id="terms" class="modal">
+
+<!--         <div id="terms" class="modal">
           <div class="modal-content">
             <div class="modal-body">
               <h4>Review the Terms</h4>
@@ -101,10 +100,9 @@
 
             </div>
           </div>
+        </div> -->
 
-        </div>
     </div>
-  </div>
 
 </section>
 
@@ -470,7 +468,37 @@
   </div>
 </div>
 <!-- build:js js/vendor.js -->
+<!-- <div id="terms" class="modal">
+  <div class="modal-content">
+    <div class="modal-body">
+      <h4>Review the Terms</h4>
+      <p>
+        By clicking <b>“I Agree”</b>, you understand and agree to the Contract on behalf of Customer (as described in our Customer Terms of Service), and to our Privacy Policy.
+      </p>
 
+      <button class="btn btn-sub" id="btn-terms">I agree</button>
+
+    </div>
+  </div>
+</div> -->
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <h4>Review the Terms</h4>
+        <p>
+          By clicking <b>“I Agree”</b>, you understand and agree to the Contract on behalf of Customer (as described in our Customer Terms of Service), and to our Privacy Policy.
+        </p>
+
+        <button class="btn btn-sub" id="btn-terms">I Agree</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 <!-- bower:js -->
 <script src="/bower_components/modernizr/modernizr.js"></script>
 <script src="/bower_components/jquery/dist/jquery.js"></script>
