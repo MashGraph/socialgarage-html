@@ -70,11 +70,11 @@
 .btn-small {
   min-width: 195px;
   border: 2px solid $main-btn;
-  line-height: 55px;
+  // line-height: 55px;
   padding: 10px 15px;
   background-color: $main-btn;
   border-radius: 2px;
-  font-size: 25px;
+  font-size: 22px;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   color: #fff;
@@ -84,16 +84,18 @@
     color: #fff;
     background: linear-gradient(0deg, $main-btn-light, $main-btn-light 18px, $main-btn-light 10px, $main-btn-light 10px);
   }
+  @media screen and (max-width:414px){
+    width: 100%;
+  }
 }
 
 .btn-small-light {
   min-width: 195px;
-  line-height: 55px;
   padding: 10px 15px;
   background-color: transparent;
   border-radius: 2px;
   border: 2px solid #a6a6a6;
-  font-size: 25px;
+  font-size: 22px;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   color: #a6a6a6;
@@ -102,6 +104,9 @@
   &:hover {
     color: $main-btn-light;
     text-shadow: none;
+  }
+  @media screen and (max-width:414px){
+    width: 100%;
   }
 }
 

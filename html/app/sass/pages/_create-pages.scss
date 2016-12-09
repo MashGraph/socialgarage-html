@@ -1,69 +1,140 @@
-.margin-top-100{
-  margin-top: 100px;
+// header
+.nav-link{
+  li a {
+    color: $nav-color!important;
+  }
 }
-.margin-top-80{
-  margin-top: 80px;
+.main-nav{
+      border-bottom: 1px solid #eeeeee!important;
 }
-.margin-top-75{
-  margin-top: 75px;
+// footer
+.social-pages{
+  .details {
+    .icon i{
+      color: $nav-color!important;
+    }
+    span {
+      color: $nav-color!important;
+    }
+    a {
+      color: $foot-site!important;
+    }
+  }
 }
-.margin-top-60{
-  margin-top: 60px;
-}
-.margin-top-50{
-  margin-top: 50px;
-}
-.margin-top-40{
-  margin-top: 40px;
-}
-.margin-top-35{
-  margin-top: 35px;
-}
-.margin-top-30{
-  margin-top: 30px;
-}
-.clear-pad{
-  padding: 0px!important;
+.copy-pages{
+  .copy-txt{
+    font-size: 11px;
+    padding-top: 10px;
+  }
+  .copy-links {
+    a {
+      color: $foot2-color!important;
+      font-size: 11px;
+    }
+  }
 }
 
-// //start modal
-.modal-body {
-  @media screen and (max-width: 375px) {
-      padding-top: 50px;
+
+// modal
+@media screen and (min-width: 768px){
+  .modal-header {
+    a {
+      color: $nav-modal!important;
     }
-  @media screen and (max-width: 768px) {
-      padding-top: 80px;
+    .btn{
+      background-color: transparent;
+      border-right: 1px solid #fff;
     }
+    .navbar-form {
+      padding-left: 200px;
+    }
+    .form-control {
+      background-color: transparent;
+      border: none;
+    }
+    input {
+      border-left: 1px solid #fff;
+      color: #999990;
+      width: 100px!important;
+    }
+    .navbar-modal{
+      background-color: #000!important;
+      min-height: 50px!important;
+    }
+    .main-nav{
+      height: 51px!important;
+    }
+    .navbar-nav{
+      padding-left: 50px;
+      .active {
+        background-color: #e7e7e7;
+      }
+      li {
+        a {
+          line-height: 0px!important;
+          i {
+            font-size: 18px;
+            color: $nav-modal;
+          }
+        }
+      }
+    }
+  }
+  .modal-dialog{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+    min-height: 350px!important;
+    width: 1000px;
+    .modal-body {
+      text-align: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+      padding-bottom: 70px;
+      max-width: 434px;
+      .block-content{
+        .btn-std {
+            width: 100%;
+            padding: 15px 20px 15px 20px!important;
+            margin-top: 25px;
+            background-color: $main-color;
+            border-radius: 2px;
+            border: none;
+            font-size: 14px;
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+            color: #fff!important;
+
+            &:hover, &:active{
+              color: #fff;
+              border: none;
+            }
+            @media screen and (max-width: 320px) {
+              min-width: 270px;
+              font-size: 20px;
+            }
+          }
+        h1{
+          margin-top: 65px;
+          font-size: 18px;
+          font-weight: 700;
+        }
+        p {
+          margin-top: 18px;
+        }
+      }
+    }
+  }
+}
+// end modal
+
+//body
+.block-wrap {
   @extend .center-item;
-  text-align: center;
-  max-width: 600px;
-  min-height: 500px;
-  padding-top: 100px;
-  h4 {
-    font-size: 40px;
-    color: $main-font-color;
-  }
-  p {
-    padding-top: 40px;
-    padding-left: 15%;
-    padding-right: 15%;
-    // max-width: 370px;
-  }
-  button {
-    margin-top: 75px;
-    @media screen and (max-width: 375px) {
-      margin-top: 45px;
-    }
-    @media screen and (max-width: 768px) {
-      margin-top: 75px;
-    }
-  }
-}
-
-//end modal
-
-
-.block {
+    margin-top: 50px;
     position: relative;
     text-align: center;
     .center-main {
@@ -71,511 +142,421 @@
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 150px;
-      max-width: 600px;
+      max-width: 600px!important;
+      min-height: 350px!important;
     }
     .center-item {
       display: block;
       margin-left: auto;
       margin-right: auto;
     }
-    img {
-        @extend .center-item;
-        margin-bottom: 80px;
-      }
-    h1{
-        font-size: 50px;
-        font-weight: 700;
-      }
-    .create-garage {
-      h2{
-        padding-left: 200px;
-        padding-right: 200px;
-        font-size: 40px;
-      }
-      p {
-          @extend .center-item;
-          margin-top: 80px;
-          font-size: 16px;
-          font-weight: 200;
-          padding: 0px 10px 55px 10px;
-          max-width: 600px;
-      }
-      .block-form {
-        @extend .center-item;
-        max-width: 600px;
-        height: 200px;
-        background-color: $form-box-color;
-        margin-bottom: 20px;
-          .form-group {
-            @include centerer(true, true);
-            input{
-                max-width: 340px;
-                height: 50px;
-                text-align: center;
-                font-size: 25px;
-            }
-          }
-      }
-      .note {
-        font-size: 16px;
-        width: 100%;
-        color: $main-font-color;
-        a {
-            color: $main-btn;
-        }
-      }
+    h1 {
+      display: block;
+      font-size: 25px;
+      font-weight: bold;
+      color: $title-gray;
     }
-    .confirm {
-      @extend .center-main;
-      img{
-        margin-bottom: 70px;
-      }
-      h2 {
-        font-size: 40px;
-      }
-      form {
-        width: 625px;
-      }
-      .code-title {
-        margin-top: 50px;
-        font-size: 25px;
-        text-align: center;
-        color: $main-font-color;
-      }
-      .email {
-        margin-top: 30px;
-        font-size: 35px;
-        font-weight: bold;
-        color: $main-font-color;
-        text-align: center;
-        // @include centerer(true, false);
-      }
-      .form-error{
-        text-align: center;
-        color: #c1272d;
-        margin-top: 200px;
+    // buttons
+    .btn {
+        font-family: 'Lato', sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #fff;
+        border: none;
+        background-color: $main-color;
+        transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+
+        &:hover {
+          box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+          outline-color: rgba(255, 255, 255, 0);
+          outline-offset: 15px;
+          text-shadow: 1px 1px 2px #427388;
+          color: #fff;
+        }
+
         i {
-          font-size: 12px;
-          padding: 5px 10px 5px 10px;
-          margin-bottom: 25px;
-          border: 2px solid #c1272d;
-          border-radius: 50%;
-        }
-        p{
-          width: 100%;
-          font-size: 25px;
-        }
-      }
-      .form-code {
-        max-width: 600px;
-        text-align: center;
-        margin-top: 30px;
-        display: block;
-        .form-group{
-          width: 100%;
-        }
-        input {
-          float: left;
-          text-align: center;
-          font-size: 60px;
-          width: 70px;
-          height: 100px;
-          margin-right: 10px;
-          @media screen and (max-width: 414px) {
-            width: 40px;
-            height: 70px;
-            margin-right: 0px;
-          }
+          // font-size: 30px;
+          vertical-align: middle;
         }
 
-        form {
-          font-size: 30px;
-
-        }
         span {
-          padding-top: 15px;
-          padding-right: 10px;
-          float: left;
-          font-size: 50px;
-          @media screen and (max-width: 414px) {
-            padding-top: 0px;
-          }
+          padding-left: 8px;
         }
       }
-    }
-    .garage-name {
-      @extend .center-main;
+      .btn-std {
+        width: 100%;
+        padding: 15px 20px 15px 20px!important;
+        margin-top: 25px;
+        background-color: $main-color;
+        border-radius: 2px;
+        border: none;
+        font-size: 14px;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        color: #fff!important;
 
-      p {
-        margin-top: 40px;
-        font-size: 16px;
-        font-weight: 100;
-        padding: 0px;
+        &:hover, &:active{
+          color: #fff;
+          border: none;
+        }
+        @media screen and (max-width: 320px) {
+          min-width: 270px;
+          font-size: 20px;
+        }
       }
-        form {
-          font-size: 16px;
-          text-align: left;
-          margin-top: 60px;
-          label {
-            padding-left: 17px;
-            margin-bottom: 12px;
+
+      .content {
+        .btn {
+          &:hover {
+            background-color: $main-color;
+            box-shadow: none;
+            outline-color: rgba(255, 255, 255, 0);
+            outline-offset: 15px;
+            text-shadow: 1px 1px 2px #427388;
+            color: $btn-sm-bg;
           }
-          input{
-            max-width: 295px;
-            height: 40px;
-            float: left;
-            margin-left: 5px;
-            margin-bottom: 30px;
-            @media screen and (max-width: 414px) {
-              max-width: 100%;
-            }
+        }
+        form .form-group .btn-color-gray {
+          color: #a5a5a5!important;
+        }
+      }
+      .btn-sm {
+        display: block;
+        width: 100%!important;
+        text-align: center;
+        margin-top: 10px;
+        // padding: 15px 44px 15px 44px;
+        // padding: 15px 20px 15px 20px;
+        background-color: $btn-sm-bg;
+        border-radius: 2px;
+        border: 1px solid $border-box;
+        text-transform: none;
+        font-size: 12px;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        color: #a5a5a5!important;
+        &:hover, &:active{
+          color: #a5a5a5;
+
+        }
+        @media screen and (max-width: 320px) {
+          min-width: 270px;
+          font-size: 20px;
+        }
+      }
+
+      .btn-left {
+        text-align: left;
+        span {
+          float: right;
+          font-size: 12px;
+          font-style: none!important;
+          font-weight: bold;
+        }
+      }
+// end buttons
+  .margin-top-40{
+    margin-top: 40px;
+  }
+
+    .create-garage {
+      @extend .center-main;
+      a {
+        &:hover {
+          text-decoration: none;
+          opacity: 0.8;
+        }
+      }
+      img {
+        @extend .center-item;
+      }
+
+      .box{
+        @extend .center-item;
+        position: relative;
+        background-color: $border-box-bg;
+        max-height: 123px;
+        border: 1px solid $border-box;
+        padding: 20px;
+        margin-bottom: 53px;
+        &:hover {
+          opacity: 0.8;
+        }
+        img {
+          @extend .center-item;
+        }
+        .cloud-icon {
+          position: absolute;
+          top: 5px;
+          left: 43%;
+          // @media screen and (min-width: 320px ){
+          //   left: 10%;
+          // }
+          @media screen and (max-width: 414px ){
+            left: 26%;
+          }
+          i {
+            font-size: 38px;
+            color: #b7b8b8;
+            padding-top: 20px;
+          }
+        }
+        .box-content{
+          @media screen and (max-width: 414px ){
+            padding-left: 30px;
+          }
+          padding-left: 100px;
+          h1 {
+            font-size: 20px;
+            color: #b7b8b8;
+            margin-bottom: 0px;
           }
           p{
-            padding-left: 14px;
-            padding-right: 14px;
-            font-size: 16px;
-            color: #a5a5a5;
+            color: #b7b8b8;
+            margin: 0px;
+            font-size: 14px;
           }
-          button {
+        }
+        i {
+          position: absolute;
+          top: 8px;
+          right: 9px;
+          color: #b7b8b8;
+        }
+
+      }
+
+      .big-icon {
+          float: left;
+          color: $main-color!important;
+          i {
+              font-size: 190px;
+          }
+          @media screen and (min-width: 320px) and (max-width: 767px){
+            float: left;
+            i {
+              font-size: 140px;
+              text-align: center;
+            }
+          }
+
+        }
+        .content-side{
+          padding-right: 65px;
+          float: left;
+           @media screen and (min-width: 320px) and (max-width: 767px){
+            float: right;
+          }
+          h1 {
+            text-align: left;
+            font-size: 22px;
+            color: $title-gray;
+            font-weight: bold;
+          }
+          p {
+            text-align: left;
+            font-size: 12px;
+          }
+        }
+      .content {
+        margin-top: 56px;
+
+        form {
+          // .form-group:nth-child(2){
+          //   margin-top: 40px;
+          // }
+          input{
+            width: 100%;
+            height: 50px;
+            margin-bottom: 5px;
+          }
+          .form-group:nth-child(1){
+            margin-bottom: 20px;
+          }
+          a {
+            color: $main-color!important;
+          }
+          .password-strength{
             @extend .center-item;
-          }
-          .full-width {
-            input{
-              max-width: 99%!important;
-              @media screen and (max-width: 414px) {
-                width: 100%;
+            max-width: 600px;
+            font-size: 12px;
+            .very-weak {
+              float: left;
+              width: 24%;
+              color: #eeeeee;
+              margin-right: 4px;
+              border-bottom: 4px solid #eeeeee;
+              @media screen and (max-width: 414px ){
+                width: 23%;
+                font-size: 10px;
+              }
+            }
+            .weak {
+              float: left;
+              width: 24%;
+              color: #ced2e7;
+              margin-right: 4px;
+              border-bottom: 4px solid #ced2e7;
+              @media screen and (max-width: 414px ){
+                width: 23%;
+                font-size: 10px;
+              }
+            }
+            .meh {
+              float: left;
+              width: 24%;
+              color: #b2d4e7;
+              margin-right: 4px;
+              border-bottom: 4px solid #b2d4e7;
+              @media screen and (max-width: 414px ){
+                width: 23%;
+                font-size: 10px;
+              }
+            }
+            .awesome {
+              float: left;
+              width: 24%;
+              color: #00b3cd;
+              border-bottom: 4px solid #00b3cd;
+              @media screen and (max-width: 414px ){
+                width: 23%;
+                font-size: 10px;
               }
             }
           }
-        }
-    }
-    .set-pass {
-      @extend .center-main;
-      h2 {
-        font-size: 40px;
-        font-family: 'Lato';
-      }
-      p {
-        margin-top: 35px;
-        font-size: 16px;
-        color: $main-font-color;
-        padding: 0px;
-        font-weight: 100;
-      }
-      form{
-        margin-top: 60px;
-        label {
-          font-size: 16px;
-        }
-        input {
-          @extend .center-item;
-          padding-left: 15px;
-          max-width: 400px;
-          height: 50px;
-          font-size: 16px;
-          @media screen and (max-width: 414){
-            width: 100%;
+          .pass-err{
+            font-size: 12px;
+            color: #a5a5a5;
+            margin-bottom: 40px!important;
           }
-        }
-        button {
-          @extend .center-item;
-        }
-        p {
-          @extend .center-item;
-          padding-top: 35px;
-          max-width: 400px;
-          font-weight: 100;
-          color: #a5a5a5;
-          text-align: center;
-        }
-        .password-strength{
-          @extend .center-item;
-          max-width: 400px;
-          .very-weak {
+          .domain-suggest {
             float: left;
-            width: 24%;
-            color: #dddddd;
-            margin-right: 4px;
-            border-bottom: 4px solid #dddddd;
+            .chosen-domain b {
+              text-align: left!important;
+              font-style: italic;
+            }
+            ul li {
+              color: $main-color;
+            }
           }
-          .weak {
-            float: left;
-            width: 24%;
-            color: #6f6f6f;
-            margin-right: 4px;
-            border-bottom: 4px solid #6f6f6f;
+          .input-group-btn{
+            font-size: 14px;
+            // border: 1px solid gray;
           }
-          .meh {
-            float: left;
-            width: 24%;
-            color: #f26c4f;
-            margin-right: 4px;
-            border-bottom: 4px solid #f26c4f;
-          }
-          .awesome {
-            float: left;
-            width: 24%;
-            color: #00ff00;
-            border-bottom: 4px solid #00ff00;
-          }
-        }
-
-      }
-    }
-    .team-input {
-      @extend .center-main;
-      max-width: 400px;
-      h2 {
-        text-align: center;
-        font-size: 40px;
-        font-family: 'Lato';
-      }
-      label {
-          // text-align: left!important;
-          font-size: 16px;
-          font-weight: 100;
-        }
-      select {
-        @extend .center-item;
-        margin-bottom: 20px;
-        height: 50px;
-        width: 400px;
-        font-size: 16px;
-        color: $input-color;
-        text-indent: 0.01px;
-        text-overflow: '';
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        background: #fff url("../img/caret-down.png") no-repeat 96% 50%;
-        background-size: 20px 20px;
-        }
-      form {
-        button {
-          @extend .center-item;
-        }
-        label {
-          margin-bottom: 13px;
-          font-size: 16px;
-        }
-        margin-top: 35px;
-        text-align: left;
-      }
-    }
-
-    .garage-company {
-      @extend .center-main;
-      h2 {
-
-        font-size: 40px;
-      }
-      form {
-        max-width: 400px;
-        margin-top: 37px;
-        text-align: left;
-        @extend .center-item;
-        button {
-          @extend .center-item;
-        }
-        p {
-          font-size: 16px;
-          color: #a6a6a6;
-        }
-        label {
-          margin-bottom: 15px;
-          font-size: 16px;
-        }
-        input {
-          padding-left: 15px;
-          margin-bottom: 20px;
-          max-width: 400px;
-          height: 50px;
-          font-size: 16px;
-          @media screen and (max-width: 414){
-            width: 100%;
-          }
-        }
-      }
-    }
-    .create-team {
-      @extend .center-main;
-      h2 {
-        font-size: 40px;
-      }
-      p {
-        color: #a6a6a6;
-        font-size: 16px;
-        b {
-          color: #303838;
-        }
-      }
-      form {
-        @extend .center-item;
-        max-width: 400px;
-        margin-top: 45px;
-        .form-group {
-          .domain {
+          .preview {
+            // text-align: right;
             float: right;
-            width: 35%;
-            padding: 10px;
-            font-size: 16px;
-            color: $input-color;
-            @media screen and (max-width: 375px){
-              width: 40%;
-              font-size: 14px;
-            }
+            font-size: 12px;
+            color: $main-color;
           }
-          input {
-            @extend .center-item;
-            float: left;
-            max-width: 65%;
-            line-height: 50px;
-            height: 50px;
-            font-size: 16px;
-            @media screen and (max-width: 375px){
-              width: 60%;
-            }
-          }
-        }
-        .domain-suggest {
-          text-align: left;
-          margin-top: 35px;
-          padding-top: 35px;
-          padding-left: 25px;
-          .chosen-domain {
-            color: $main-font-color;
-            font-style: italic;
-            i {
-              font-weight: bold;
-            }
-          }
-          ul {
-            color: $main-btn;
+          .form-group {
+            position: relative;
             text-align: left;
-            font-size: 16px;
-            font-weight: bold;
-          }
-        }
-      }
-    }
-    .garage-invites {
-      form {
-        @include centerer(true, false);
-        font-size: 16px;
-        text-align: left;
-        margin-top: 37px;
-      }
-      label {
-        color: $main-font-color;
-        font-size: 16px;
-      }
-      .form-group {
-        a {
-          padding-left: 126px;
-          color: $main-btn!important;
-        }
-      }
-      .form-control{
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-      }
-      .input-group{
-        margin-bottom: 15px;
-      }
-      input {
-        height: 40px;
-        width: 400px;
-        font-size: 16px;
-      }
-      .input-group-addon {
-        border: none;
-        background-color: transparent;
-        height: 10px;
-        padding-top: -20px!important;
-        width: 10px;
-        font-size: 16px;
-        color: $main-font-color;
-        a{
-          color: $main-font-color!important;
-        }
-      }
-    }
+            margin-bottom: 0px;
 
-    .edit-profile {
-      .form-group{
-        text-align: left;
-        // width: 50%;
-      }
-      form {
-        @include centerer(true, false);
-        // width: 100%;
-        margin-top: 45px;
-        position: relative;
-        width: 600px;
-        label {
-          font-size: 16px;
-          color: $main-font-color;
-        }
-        .btn-center{
-          @include centerer(true, false);
-          width: 100%;
-          margin-left: 100px;
-        }
-      }
-      span {
-        color: #a6a6a6;
-        font-weight: 16px;
-        width: 300px;
-      }
-      input {
-        width: 300px;
-        height: 50px;
-        margin-bottom: 10px;
-      }
-      .profile {
-        position: absolute;
-        top: 0;
-        right: 0;
-        h5 {
-            font-size: 16px;
-            color: $main-font-color;
-            margin: 0px 0px 10px 0px;
-            text-align: left;
-            font-weight: bold;
-          }
-        .profile-img {
-          width: 230px;
-          height: 230px;
-          background-repeat: no-repeat;
-          background: url('../img/profile-edit.png');
-          a {
-            @include centerer(true, true);
-            font-size: 67px;
-            color: #fff!important;
-            width: 100%;
-            h4 {
-              font-size: 16px;
-              font-weight: bold;
+            a {
+              .pop-note{
+                font-size: 11px;
+                color: $main-color!important;
+                margin-top: 15px;
+                text-align: left;
+              }
             }
+            label {
+              padding-bottom: 12px;
+            }
+            p {
+              // color: $main-color;
+              text-align: center;
+              font-size: 12.8px;
+              a {
+                color: $main-color;
+                font-weight: bold;
+              }
+            }
+            .input-icon {
+              position: absolute;
+              top: 16px;
+              left: 10px;
+              color: $main-color;
+            }
+            .input-text {
+              position: absolute;
+              padding-left: 10px;
+              color: #a5a5a5;
+              top: 16px;
+              right: 10px;
+              border-left: 1px solid #a5a5a5;
+            }
+            .input-sub{
+              text-align: right;
+              padding-right: 140px;
+            }
+              /* Popover */
+
+              /* Popover Body */
+              .popover {
+                // top: 98px!important;
+                top:22px!important;
+                right: 0;
+                max-width: 239px;
+                // background-color: #f3f3f3;
+                background-color: transparent;
+                p{
+                  font-size: 12px;
+                  text-align: left;
+                }
+                small {
+                    color: #a5a5a5!important;
+                  }
+
+                @media screen and (max-width: 1024px){
+                    left: 80px!important;
+                    // background-color: transparent!important;
+                }
+              }
+              .popover-content {
+                  max-width: 239px;
+                  background-color: #f3f3f3;
+                  color: #a5a5a5;
+                  font-size: 12px;
+                  padding: 15px;
+                  p {
+                    text-align: left!important;
+                  }
+                  small {
+                    color: #a5a5a5;
+                  }
+              }
+              /* Popover Arrow */
+              .arrow {
+                  top: 11%!important;
+                  &:after{
+                    border-left-color: #f3f3f3;
+                  }
+                  @media screen and (max-width: 1024px){
+                    left: 0px!important;
+                    &:after{
+                      border-left-color: red;
+                    }
+                  }
+              }
           }
+          // small {
+          //   font-size: 10px;
+          //   color: $main-color!important;
+          //   margin-top: 5px;
+          //   text-align: left;
+          // }
         }
+
       }
+
+      p {
+        margin-top: 20px;
+        font-size: 14px;
+        color: $title-gray;
+      }
+
     }
-
-
-
-
-
-
-
-
-
-
-    .code-title {
-      margin-top: 95px;
-    }
-
-
 }
-
-
