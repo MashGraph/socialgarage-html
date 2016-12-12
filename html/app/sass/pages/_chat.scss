@@ -1,0 +1,25 @@
+.chat-mobile {
+  .chat-user-list {
+    position: abolute;
+    width: 100%;
+    top: 40px;
+  }
+
+  .chat-box {
+    right: -100vw;
+    z-index: 99999999999999;
+    width: 100%;
+
+    &.open {
+      right: 0;
+    }
+  }
+
+  .user-chat-input {
+    bottom: 20px;
+  }
+
+  .channel-name {
+    margin: 0;
+  }
+}

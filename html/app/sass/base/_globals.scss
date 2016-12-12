@@ -7,7 +7,9 @@ body {
 }
 
 body {
-  padding-top: 45px;
+  @media (min-width: 768px) {
+    padding-top: 45px;
+  }
 
   &.modal-open {
     padding-right: 0 !important;
@@ -171,6 +173,12 @@ button {
     margin-top: -2px;
   }
 }
+
+// @media screen and (min-width: 1200px) {
+//   .container {
+//     width: 1366px;
+//   }
+// }
 
 .btn-lg {
   display: flex;
@@ -382,5 +390,3 @@ body.modal-open .popover {
   background-color: #f2fbff !important;
   border-color: #e4ecf0 !important;
 }
-
-

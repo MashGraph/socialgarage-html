@@ -50,6 +50,15 @@ $(document).ready(function() {
 
 
   });
+  $('.scroll-chat-list-mobile').slimscroll({
+    height: '100vh',
+    distance: '3px',
+    size: '3px',
+    railVisible: false
+
+
+
+  });
   $('.direct-scroll').slimscroll({
     height: '300px',
     distance: '3px',
@@ -75,8 +84,25 @@ $(document).ready(function() {
       return $('#popover-content').html();
     }
   });
+  $('.return').on('click', function(e) {
+    e.preventDefault();
+    $('.chat-mobile .chat-box').toggleClass('open');
+  });
+  $('.chat-mobile .chat-user-list .channel-list ul li a').each(function() {
+    $(this).on('click', function(e) {
+      e.preventDefault();
+      $('.chat-mobile .chat-box').toggleClass('open');
+    });
+  });
+
+  $('.chat-mobile .chat-user-list .direct-list ul li a').each(function() {
+    $(this).on('click', function(e) {
+      e.preventDefault();
+      $('.chat-mobile .chat-box').toggleClass('open');
 
 
+    });
+  });
 
 
   $('.user-popover').popover({
