@@ -6,6 +6,7 @@ $icon-font-path: '../fonts/';
 // bower:scss
 @import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 @import 'bower_components/font-awesome/scss/font-awesome.scss';
+
 // endbower
 
 /*----- FONTS-------
@@ -54,3 +55,4 @@ $icon-font-path: '../fonts/';
 @import 'pages/notifications';
 @import 'pages/landing';
 @import 'pages/chat';
+@import 'pages/create-pages';
