@@ -103,7 +103,7 @@
                 </div>
               </div>
               <div class="col-md-12">
-                <a href="" class="preview" data-toggle="modal" data-target="#preview"> Preview your Garage <b>></b> </a>
+                <a href="javascript:void(0);" class="preview" data-toggle="modal" data-target="#preview"> Preview your Garage <b>></b> </a>
               </div>
               <div class="col-md-12">
                 <div class="form-group">
@@ -178,7 +178,6 @@
 <!-- modal -->
 <div id="preview" class="modal fade" role="dialog">
   <div class="modal-dialog">
-
     <div class="modal-content">
       <div class="modal-header">
           <header>
@@ -245,7 +244,6 @@
 <script src="/bower_components/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
 <script src="/bower_components/video.js/dist/video.js"></script>
 <script src="/bower_components/owl.carousel/dist/owl.carousel.js"></script>
-<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="/bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
@@ -265,21 +263,7 @@
 <!-- endbuild -->
 <!-- build:js js/main.js -->
 <!-- modal js -->
-<script>
-var modal = document.getElementById('preview');
-var btn = document.getElementById("btn-preview");
-var span = document.getElementsByClassName("close")[0];
-btn.onclick = function() {
-    modal.style.display = "block";
-}
 
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "block";
-    }
-}
-</script>
 
 <!-- popover js -->
   <script>
