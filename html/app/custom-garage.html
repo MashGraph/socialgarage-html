@@ -10,7 +10,10 @@
   <!-- Place favicon.ico in the root directory -->
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/fancybox/source/jquery.fancybox.css" />
   <link rel="stylesheet" href="/bower_components/video.js/dist/video-js.css" />
+  <link rel="stylesheet" href="/bower_components/mjolnic-bootstrap-colorpicker/dist/css/bootstrap-colorpicker.css" />
+  <link rel="stylesheet" href="/bower_components/bootstrap-colorpicker-plus/dist/css/bootstrap-colorpicker-plus.css" />
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css css/main.css -->
@@ -51,75 +54,70 @@
     </nav>
   </header>
 
-
 <section>
-    <div class="container">
-      <div class="block-wrap">
-        <div class="create-garage">
-          <a href="">
-            <div class="box">
-              <img src="img/body-logo.png" class="img-responsive" alt="">
-              <i class="fa fa-times" aria-hidden="true"></i>
-            </div>
-          </a>
-          <h1>Pimp your garage.</h1>
-          <p>Your Social Garage team is ready to go. Know a few friends or coworkers who’d like to explore Social Garage with you?</p>
-
-          <div class="content">
-              <form action="">
-                <div class="row">
-                  <div class="col-md-5">
-                    <div class="form-group">
-                    <label for="">Place Hexadecimal</label>
-                      <input type="text" class="form-control" placeholder="Place code here">
-                    </div>
-                    <div class="form-group">
-                      <a href="custom-garage.html" class="btn-color-gray btn-sm"><i class="fa fa-cloud-upload" aria-hidden="true"></i> Upload Secondary Logo</a>
-                      <a href="javascript:void(0);" data-placement="left" data-toggle="popover">
-                        <div class="pop-note">What's This?</div>
-                      </a>
-                      <div id="popover-content" style=" display: none;">
-                        <p>
-                          We will display this logo in the navigation bar of the inner pages.
-                        </p>
-                        <p>
-                          To ensure maximum visibility of your logo, we recommend you to upload a ligher version of your logo, as the background on that part is colored black. Please take note that you can always update this later.
-                        </p>
-
-                        <p>
-                          <small>This is how it looks.</small>
-                          <img src="img/pop-img.png" alt="">
-                        </p>
-                      </div>
-                    </div>
-
+  <div class="container">
+    <div class="block-wrap">
+      <div class="create-garage">
+        <a href="">
+          <div class="box">
+            <img src="img/body-logo.png" class="img-responsive" alt="">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </div>
+        </a>
+        <h1>Pimp your garage.</h1>
+        <p>Your Social Garage team is ready to go. Know a few friends or coworkers who’d like to explore Social Garage with you?</p>
+        <div class="content">
+          <form action="">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="form-group">
+                  <label for="">Place Hexadecimal</label>
+                  <input type="text" class="form-control" placeholder="Place code here">
+                </div>
+                <div class="form-group">
+                  <a href="custom-garage.html" class="btn-color-gray btn-sm"><i class="fa fa-cloud-upload" aria-hidden="true"></i> Upload Secondary Logo</a>
+                  <a href="javascript:void(0);" data-placement="left" data-toggle="popover">
+                    <div class="pop-note">What's This?</div>
+                  </a>
+                  <div id="popover-content" style=" display: none;">
+                    <p>
+                      We will display this logo in the navigation bar of the inner pages.
+                    </p>
+                    <p>
+                      To ensure maximum visibility of your logo, we recommend you to upload a ligher version of your logo, as the background on that part is colored black. Please take note that you can always update this later.
+                    </p>
+                    <p>
+                      <small>This is how it looks.</small>
+                      <img src="img/pop-img.png" alt="">
+                    </p>
                   </div>
-                  <div class="col-md-7">
-                    <div class="form-group">
-                      <label for="">Select from Color Picker</label>
-                      <img src="img/color-palette.png" class="img-responsive" alt="">
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <a href="" class="preview"  data-toggle="modal" data-target="#preview"> Preview your Garage <b>></b> </a>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <a href="address-garage.html" class="btn btn-std">Create New Garage</a>
-                      <p>By clicking this button, you are agreeing to the site’s <a>Privacy Policy</a> and <a>Terms and Conditions</a>.</p>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="form-group">
+                  <label for="">Select from Color Picker</label>
+                  <input type="text" value="#fff" id="demo3" />
+                  <div class="colorpickerplus-embed">
+                    <div class="colorpickerplus-container" </div>
                     </div>
                   </div>
                 </div>
-
-              </form>
-
-
+                <div class="col-md-12">
+                  <a href="" class="preview" data-toggle="modal" data-target="#preview"> Preview your Garage <b>></b> </a>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <a href="address-garage.html" class="btn btn-std">Create New Garage</a>
+                    <p>By clicking this button, you are agreeing to the site’s <a>Privacy Policy</a> and <a>Terms and Conditions</a>.</p>
+                  </div>
+                </div>
+              </div>
+          </form>
           </div>
         </div>
       </div>
     </div>
 </section>
-
 <footer>
   <div class="container">
     <div class="clearfix logo-socials">
@@ -242,7 +240,13 @@
 <!-- bower:js -->
 <script src="/bower_components/modernizr/modernizr.js"></script>
 <script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="/bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
+<script src="/bower_components/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
 <script src="/bower_components/video.js/dist/video.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="/bower_components/mjolnic-bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js"></script>
+<script src="/bower_components/bootstrap-colorpicker-plus/dist/js/bootstrap-colorpicker-plus.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 <!-- build:js js/plugins.js -->
