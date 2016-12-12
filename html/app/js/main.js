@@ -18,7 +18,11 @@ $(document).ready(function() {
     nav: true,
     items: 1
   });
+  $('#cp3').colorpicker({
+      color: '#AA3399',
 
+
+  });
   // $('#single-post').on('show', function(event) {
   //   window.setTimeout(function() {
   //     $('.pgwSlideshow').pgwSlideshow();
@@ -29,7 +33,7 @@ $(document).ready(function() {
     var pgwSlideshow = $('.pgwSlideshow').pgwSlideshow();
 
 
-  })
+  });
   $('#nav-icon1').click(function() {
     $(this).toggleClass('open');
     $('.chat-user-list').toggleClass('open');
