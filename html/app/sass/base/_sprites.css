@@ -10,7 +10,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 ```
 */
 .icon-follow-sg {
-  background-image: url(../img/sprites.png);
+  background-image: url(/assets/images/sprites.png);
   background-position: 0px 0px;
   width: 15px;
   height: 15px;

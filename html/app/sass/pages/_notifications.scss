@@ -1,0 +1,157 @@
+.notification-list {
+  padding: 0 15px !important;
+
+  &.chat-notif {
+    padding: 0 !important;
+
+    li {
+      padding: 0 15px;
+
+      &.loader, &.empty {
+        border-bottom: none;
+        padding-top: 15px;
+
+        &.more {
+          padding: 0;
+          margin: 5px 0 0;
+          min-height: 0;
+        }
+      }
+    }
+  }
+
+  .header-underlined {
+    border-bottom: $border-color thin solid;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 20px;
+
+    h4 {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  .rank-list {
+    li {
+      min-height: 35px;
+      border-bottom: #d1d1d1 thin solid;
+      padding-bottom: 20px;
+      position: relative;
+    }
+  }
+
+  .ranked-photo {
+    img {
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  .rank-content {
+    margin-left: 55px;
+  }
+
+  .list-content {
+    h3 {
+      font-size: 14px;
+      font-weight: 700;
+
+      span {
+        font-weight: 400;
+      }
+
+      small {
+        color: #d1d1d1;
+        font-weight: 400;
+        font-size: 12px;
+        padding-left: 3px;
+        font-style: italic;
+      }
+    }
+
+    p {
+      font-family: 'Lato', sans-serif;
+      font-weight: normal;
+    }
+  }
+
+  .button-action {
+    @include centerer(false, true);
+
+    right: 15px;
+    z-index: 999;
+    outline: none;
+
+    &.inverse {
+      button {
+        background-color: transparent;
+        color: $main-theme-color;
+        border: $main-theme-color 2px solid;
+      }
+    }
+
+    button {
+      width: 45px;
+      height: 30px;
+    }
+
+    i {
+      font-size: 14px;
+      margin: 2px;
+    }
+  }
+
+  .see-all {
+    text-align: center;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 15px;
+    border-top: $border-color thin solid;
+
+    a {
+      color: $main-theme-color;
+      font-size: 16px;
+    }
+  }
+}
+
+.dropdown-menu {
+  .notification-list {
+    width: 500px !important;
+
+    .button-action {}
+
+    .rank-list {
+      li {
+        border: none;
+        margin: 0;
+        min-height: 0;
+        padding-bottom: 0;
+
+        .rank-content {
+          width: 100%;
+          padding-left: 55px;
+          margin-left: 0;
+
+          h3 {
+            small {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+
+    .see-all {
+      border-top: none;
+    }
+  }
+}
+
+.alert {
+  border-radius: 0;
+  margin: 15px 15px;
+  padding: 3px;
+}

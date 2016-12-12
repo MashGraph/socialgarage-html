@@ -3,30 +3,37 @@
     float: none;
     margin: 0 auto;
   }
+
   .login-logo {
     text-align: center;
+
     img {
       display: inline-block;
     }
   }
+
   .social-login {
     text-align: center;
     padding-top: 40px;
+
     .btn-social {
       padding-top: 10px;
       text-align: center;
       font-size: 18px;
+
       @media screen and (max-width: 767px) {
         padding: 10px 0 5px;
         text-align: center;
         font-size: 14px;
       }
+
       .fa {
         padding-top: 5px;
         border-right: rgba(248, 248, 248, 0.1) thin solid;
         width: 55px;
       }
     }
+
     span {
       &.title-header {
         text-transform: uppercase;
@@ -38,13 +45,17 @@
 
 .email-login {
   input {
-    padding: 25px;
+    padding: 15px;
     font-size: 18px;
+    height: 50px;
   }
+
   padding-top: 60px;
+
   .btn {
     height: 42px;
     line-height: 28px;
+
     @media screen and (max-width: 767px) {
       font-size: 14px;
       height: 32px;
@@ -55,9 +66,11 @@
 
 .terms {
   margin-top: 30px;
+
   ul {
     li {
       display: inline-block;
+
       a {
         text-transform: uppercase;
       }

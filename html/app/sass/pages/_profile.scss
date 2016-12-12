@@ -3,24 +3,30 @@
     min-height: 235px;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 850px;
+    width: 830px;
     margin-top: -3px;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       width: 100%;
     }
-     @media screen and (max-width: 767px) {
+
+    @media screen and (max-width: 767px) {
       width: 100%;
     }
   }
 
   .user-counts {
-    width: 850px;
+    width: 830px;
+
+    // -webkit-box-shadow: 0px -55px 205px 0px rgba(1, 17, 17, 1);
+    // -moz-box-shadow: 0px -55px 205px 0px rgba(1, 17, 17, 1);
+    // box-shadow: 0px -55px 205px 0px rgba(1, 17, 17, 1);
 
     @media screen and (max-width: 767px) {
       width: 100%;
     }
-     @media screen  and (max-width: 767px) {
+
+    @media screen and (max-width: 767px) {
       width: 100%;
     }
 
@@ -28,8 +34,12 @@
     background-color: #011111;
 
     h2 {
-      font-size: 25px;
-      margin-top: 10px;
+      font-size: 15px !important;
+
+      span {
+        color: #fff;
+        text-transform: uppercase;
+      }
     }
 
     p {
@@ -48,9 +58,20 @@
   }
 
   .user-banner-cover {
-    width: 135px;
+    width: auto;
+    z-index: 999;
 
     @include centerer(true, true);
+
+    .thumbnail {
+      width: 98px;
+      left: calc(50% - 49px);
+
+      img {
+        height: 98px;
+        width: 98px;
+      }
+    }
 
     .cover-name {
       text-align: center;
@@ -74,5 +95,38 @@
 
   .photo-item {
     padding: 0;
+  }
+}
+
+/*----- ADDED REVISIONS ------
+-------------------------------*/
+.about-section {
+  padding-left: 20px;
+
+  .about-title {
+    padding-bottom: 8px;
+    border-bottom: $border-color thin solid;
+  }
+
+  .about-section-content {
+    ul {
+      li {
+        margin-bottom: 10px;
+        position: relative;
+
+        ul {
+          padding-left: 30px;
+        }
+
+        & > span {
+          padding-left: 30px;
+        }
+
+        i {
+          position: absolute;
+          top: 3px;
+        }
+      }
+    }
   }
 }
