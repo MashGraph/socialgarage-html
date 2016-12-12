@@ -18,15 +18,11 @@ $(document).ready(function() {
     nav: true,
     items: 1
   });
-  var demo3 = $('.colorpickerplus-embed .colorpickerplus-container');
-  demo3.colorpickerembed();
-  demo3.on('changeColor', function(e) {
-    if (e.color == null) {
-      $('#demo3').val('transparent').css('background-color', '#fff'); //tranparent
-    } else {
-      $('#demo3').val(e.color).css('background-color', e.color);
-    }
-  });
+  $('#cp3').colorpicker({
+            color: '#AA3399',
+
+
+        });
   // $('#single-post').on('show', function(event) {
   //   window.setTimeout(function() {
   //     $('.pgwSlideshow').pgwSlideshow();
