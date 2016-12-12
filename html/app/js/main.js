@@ -19,10 +19,10 @@ $(document).ready(function() {
     items: 1
   });
   $('#cp3').colorpicker({
-            color: '#AA3399',
+      color: '#AA3399',
 
 
-        });
+  });
   // $('#single-post').on('show', function(event) {
   //   window.setTimeout(function() {
   //     $('.pgwSlideshow').pgwSlideshow();
