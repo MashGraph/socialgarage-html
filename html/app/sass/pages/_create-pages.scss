@@ -189,8 +189,10 @@
         padding: 15px 0 15px 0 !important;
       }
       .btn-feat {
-        // width: 100%;
+        width: 100%;
         background-color: #f3f3f4;
+        padding: 15px 0 15px 0 !important;
+        color: red!important;
       }
       .btn-std {
         width: 100%;
@@ -588,6 +590,17 @@
     border: 1px solid #dedede;
     padding: 60px;
     color: #fff;
+    .btn-feature {
+      color: #9d9d9e;
+      i {
+        color: #9d9d9e;
+        font-size: 20px;
+        margin-right: 10px;
+      }
+      .btn {
+        color: #9d9d9e!important;
+      }
+    }
     .package-name {
       color: #00b3cd;
       font-size: 22px;
