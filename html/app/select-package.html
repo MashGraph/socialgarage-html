@@ -71,19 +71,19 @@
                   <div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
                   <div class="title">Custom Web Domain</div>
                   <div class="sub-title">your-app.stacktrekenterprise.com</div>
-                  <div class="action"><a href=""><i class="fa fa-times" aria-hidden="true"></i></a></div>
+                  <div class="action"><i class="fa fa-times" aria-hidden="true"></i></div>
                 </div>
 
                 <div class="bar">
                   <div class="icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
                   <div class="title">Custom Web Domain</div>
                   <div class="sub-title">your-app.stacktrekenterprise.com</div>
-                  <div class="action"><a href=""><i class="fa fa-check" aria-hidden="true"></i></a></div>
+                  <div class="action"><i class="fa fa-check" aria-hidden="true"></i></div>
                 </div>
-                <!-- <div class="btn-feature">
-                  <button class="btn btn-feat"><i class="fa fa-plus-circle" aria-hidden="true"> </i><b>VIEW ALL FEATURE</b></button>
-                </div> -->
-                <div class="other-feature">
+                <!-- <div class="btn-feature"> -->
+                  <div type="button" id="btn-feat" class="btn btn-feat" onclick="showFeat()"><i class="fa fa-plus-circle" aria-hidden="true"> </i><b>VIEW ALL FEATURE</b></div>
+                <!-- </div> -->
+                <div class="other-feature" style="display: none;" id="other-feature">
                   <div class="title"> other features </div>
                   <ul class="list-group">
                     <li class="list-group-item">
@@ -132,11 +132,10 @@
                       <div class="action"><i class="fa fa-times" aria-hidden="true"></i></div>
                     </li>
                   </ul>
-
-                  <button class="btn btn-package">CHOOSE THIS PACKAGE</button>
-                  <div class="foot-note">
-                    See what are you going to get
-                  </div>
+                </div>
+                <button class="btn btn-package">CHOOSE THIS PACKAGE</button>
+                <div class="foot-note">
+                  See what are you going to get
                 </div>
               </div> <!-- end first package -->
 
@@ -151,17 +150,17 @@
                   <div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
                   <div class="title">Custom Web Domain</div>
                   <div class="sub-title">your-app.stacktrekenterprise.com</div>
-                  <div class="action"><a href=""><i class="fa fa-check" aria-hidden="true"></i></a></div>
+                  <div class="action"><i class="fa fa-check" aria-hidden="true"></i></div>
                 </div>
 
                 <div class="bar">
                   <div class="icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
                   <div class="title">Custom Web Domain</div>
                   <div class="sub-title">your-app.stacktrekenterprise.com</div>
-                  <div class="action"><a href=""><i class="fa fa-check" aria-hidden="true"></i></a></div>
+                  <div class="action"><i class="fa fa-check" aria-hidden="true"></i></div>
                 </div>
-
-                <div class="other-feature">
+                <div type="button" id="btn-feat2" class="btn btn-feat" onclick="showFeat2()"><i class="fa fa-plus-circle" aria-hidden="true"> </i><b>VIEW ALL FEATURE</b></div>
+                <div class="other-feature" style="display: none;" id="other-feature2">
                   <div class="title"> other features </div>
                   <ul class="list-group">
                     <li class="list-group-item">
@@ -210,11 +209,10 @@
                       <div class="action"><i class="fa fa-times" aria-hidden="true"></i></div>
                     </li>
                   </ul>
-
-                  <button class="btn btn-package">CHOOSE THIS PACKAGE</button>
-                  <div class="foot-note">
-                    See what are you going to get
-                  </div>
+                </div>
+                <button class="btn btn-package">CHOOSE THIS PACKAGE</button>
+                <div class="foot-note">
+                  See what are you going to get
                 </div>
               </div> <!-- end second package -->
 
@@ -229,17 +227,17 @@
                   <div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
                   <div class="title">Custom Web Domain</div>
                   <div class="sub-title">your-app.stacktrekenterprise.com</div>
-                  <div class="action"><a href=""><i class="fa fa-check" aria-hidden="true"></i></a></div>
+                  <div class="action"><i class="fa fa-check" aria-hidden="true"></i></div>
                 </div>
 
                 <div class="bar">
                   <div class="icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
                   <div class="title">Custom Web Domain</div>
                   <div class="sub-title">your-app.stacktrekenterprise.com</div>
-                  <div class="action"><a href=""><i class="fa fa-check" aria-hidden="true"></i></a></div>
+                  <div class="action"><i class="fa fa-check" aria-hidden="true"></i></div>
                 </div>
-
-                <div class="other-feature">
+                <div type="button" id="btn-feat3" class="btn btn-feat" onclick="showFeat3()"><i class="fa fa-plus-circle" aria-hidden="true"> </i><b>VIEW ALL FEATURE</b></div>
+                <div class="other-feature" style="display: none;" id="other-feature3">
                   <div class="title"> other features </div>
                   <ul class="list-group">
                     <li class="list-group-item">
@@ -288,11 +286,10 @@
                       <div class="action"><i class="fa fa-check" aria-hidden="true"></i></div>
                     </li>
                   </ul>
-
-                  <button class="btn btn-package">CHOOSE THIS PACKAGE</button>
-                  <div class="foot-note">
-                    See what are you going to get
-                  </div>
+                </div>
+                <button class="btn btn-package">CHOOSE THIS PACKAGE</button>
+                <div class="foot-note">
+                  See what are you going to get
                 </div>
               </div> <!-- end third package -->
             </div>
@@ -462,6 +459,18 @@ window.onclick = function(event) {
         modal.style.display = "block";
     }
 }
+function showFeat() {
+  document.getElementById('other-feature').style.display = "block";
+  document.getElementById('btn-feat').style.display = "none";
+}
+function showFeat2() {
+  document.getElementById('other-feature2').style.display = "block";
+  document.getElementById('btn-feat2').style.display = "none";
+}
+function showFeat3() {
+  document.getElementById('other-feature3').style.display = "block";
+  document.getElementById('btn-feat3').style.display = "none";
+}
 </script>
 
 <!-- popover js -->
@@ -473,6 +482,7 @@ window.onclick = function(event) {
         return $('#popover-content').html();
       }
     });
+
   });
   </script>
 <script src="js/main.js"></script>
