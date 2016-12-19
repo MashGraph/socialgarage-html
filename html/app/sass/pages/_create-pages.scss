@@ -189,8 +189,19 @@
         padding: 15px 0 15px 0 !important;
       }
 
+      .btn-inverse {
+        width: 80%;
+        background-color: transparent;
+        padding: 15px 20px 15px 20px!important;
+        margin: 15px 0 15px 0;
+        border: 1px solid #ccc;
+        b {
+          color: #b1afaf;
+        }
+      }
+
       .btn-std {
-        width: 100%;
+        width: 80%;
         padding: 15px 20px 15px 20px!important;
         margin-top: 25px;
         background-color: $main-color;
@@ -567,7 +578,82 @@
     }
 }
 
+.checkout-wrap {
+  @extend .center-item;
+  width: 650px;
+  background-color: #fff;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  box-shadow: -1px -1px 15px #ccc;
+  .checkout {
+    text-align: left;
+    padding: 50px 60px;
+    color: #00b3cd;
+
+    .selected-package{
+      font-size: 25px;
+      font-weight: bold;
+    }
+    p{
+      margin-top: 10px;
+      color: #555;
+    }
+    .info{
+      font-size: 11px;
+      padding: 10px 0 20px 0;
+      b{
+        color: #555;
+        float: left;
+      }
+      .info-web {
+        font-size: 13px;
+        color: #00b3cd;
+        font-weight: bold;
+        padding-left: 15px;
+        float: left;
+      }
+    }
+    a{
+      margin-top: 15px;
+      background-color: #fafafa;
+      text-shadow: none;
+      b{
+        color: #ccc!important;
+        text-transform: none;
+      }
+      i{
+        color: #888888;
+        font-size: 12px;
+        padding-left: 5px;
+      }
+    }
+    .btn-preview2{
+      border: 1px solid #ccc;
+    }
+    .total {
+      font-size: 15px;
+      width: 60%;
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      padding: 10px 25px 10px 25px;
+      .icon {
+        float: left;
+        margin-right: 15px;
+      }
+    }
+    .exp {
+      margin-top: 10px;
+      color: #555;
+      font-size: 12px;
+      b{
+        color: #00b3cd;
+      }
+    }
+  } // endcheckout
+}
 .select-package{
+  border-bottom: 5px solid #00b3cd;
+
   .select-desc{
     margin-bottom: 65px;
   }
@@ -580,9 +666,11 @@
     border: 5px dotted #fff;
     border-radius: 50%;
   }
+
   .content {
     background-color: #fff;
     border: 1px solid #dedede;
+    box-shadow: -2px -1px 15px #ccc;
     padding: 60px;
     color: #fff;
 
@@ -643,7 +731,6 @@
       }
     }
     .other-feature{
-      // display: none;
       margin-top: 20px;
       margin-bottom: 10px;
       .title {
