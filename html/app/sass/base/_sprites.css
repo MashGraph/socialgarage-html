@@ -9,9 +9,57 @@ Icon classes can be used entirely standalone. They are named after their origina
 <img class="icon-home" />
 ```
 */
-.icon-follow-sg {
-  background-image: url(/assets/images/sprites.png);
+.icon-app {
+  background-image: url(../img/sprites.png);
   background-position: 0px 0px;
+  width: 34px;
+  height: 34px;
+}
+.icon-console {
+  background-image: url(../img/sprites.png);
+  background-position: -34px 0px;
+  width: 34px;
+  height: 34px;
+}
+.icon-email {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -34px;
+  width: 34px;
+  height: 34px;
+}
+.icon-follow-sg {
+  background-image: url(../img/sprites.png);
+  background-position: -68px -68px;
   width: 15px;
   height: 15px;
+}
+.icon-group {
+  background-image: url(../img/sprites.png);
+  background-position: -34px -34px;
+  width: 34px;
+  height: 34px;
+}
+.icon-message {
+  background-image: url(../img/sprites.png);
+  background-position: -68px 0px;
+  width: 34px;
+  height: 34px;
+}
+.icon-push {
+  background-image: url(../img/sprites.png);
+  background-position: -68px -34px;
+  width: 34px;
+  height: 34px;
+}
+.icon-stat {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -68px;
+  width: 34px;
+  height: 34px;
+}
+.icon-support {
+  background-image: url(../img/sprites.png);
+  background-position: -34px -68px;
+  width: 34px;
+  height: 34px;
 }

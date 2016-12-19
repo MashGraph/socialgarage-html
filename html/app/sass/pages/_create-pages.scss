@@ -183,6 +183,15 @@
           padding-left: 8px;
         }
       }
+      .btn-package{
+        width: 100%;
+        background-color: #000;
+        padding: 15px 0 15px 0 !important;
+      }
+      .btn-feat {
+        // width: 100%;
+        background-color: #f3f3f4;
+      }
       .btn-std {
         width: 100%;
         padding: 15px 20px 15px 20px!important;
@@ -559,4 +568,123 @@
       }
 
     }
+}
+
+.select-package{
+  .select-desc{
+    margin-bottom: 65px;
+  }
+  .ribbon {
+    background-color: #00b3cd;
+    position: absolute;
+    top: -105px;
+    right: 35px;
+    padding: 20px 15px 20px 15px;
+    border: 5px dotted #fff;
+    border-radius: 50%;
+  }
+  .content {
+    background-color: #fff;
+    border: 1px solid #dedede;
+    padding: 60px;
+    color: #fff;
+    .package-name {
+      color: #00b3cd;
+      font-size: 22px;
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+    .package-description{
+      color: #555555;
+      padding-bottom: 25px;
+    }
+    .bar {
+      text-align: justify;
+      position: relative;
+      background-color: #00b3cd;
+      padding: 20px;
+      margin-bottom: 3px;
+      .icon {
+        @include centerer(false, true);
+        left: 20px;
+        i{
+          color: #b3e8f0;
+          font-size: 35px;
+        }
+      }
+      .title {
+        font-size: 16px;
+        font-weight: bold;
+        padding-left: 50px;
+      }
+      .sub-title {
+        font-size: 12px;
+        padding-left: 50px;
+      }
+      .action {
+        @include centerer(false, true);
+        right: 20px;
+        a {
+          &:hover {
+            text-decoration: none;
+          }
+          i{
+            color: #fff;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .other-feature{
+      // display: none;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      .title {
+        font-size: 11px;
+        text-align: left;
+        color: #555;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+      }
+      .list-group {
+        text-align: justify;
+        position: relative;
+        background-color: #fff;
+        border: none;
+        padding-bottom: 20px;
+        .list-group-item{
+          border: 1px solid #e3e3e3;
+          padding: 20px;
+        }
+
+        .icon {
+          @include centerer(false, true);
+          left: 20px;
+        }
+        .description {
+          color: #00b3cd;
+          font-size: 14px;
+          font-weight: bold;
+          padding-left: 50px;
+        }
+        .action {
+          @include centerer(false, true);
+          right: 20px;
+          i{
+            color: #00b3cd;
+            font-size: 20px;
+          }
+          .fa-times {
+            color: #b3b3b3;
+          }
+        }
+      }
+      .foot-note {
+        padding-top: 5px;
+        text-align: left;
+        font-size: 10px;
+        color: #555;
+      }
+    }
+  }
 }
