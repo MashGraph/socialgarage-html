@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="/bower_components/fancybox/source/jquery.fancybox.css" />
   <link rel="stylesheet" href="/bower_components/video.js/dist/video-js.css" />
   <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.css" />
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css css/main.css -->
@@ -150,7 +151,6 @@
 <!-- modal -->
 <div id="preview" class="modal fade" role="dialog">
   <div class="modal-dialog">
-
     <div class="modal-content">
       <div class="modal-header">
           <header>
@@ -217,6 +217,7 @@
 <script src="/bower_components/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
 <script src="/bower_components/video.js/dist/video.js"></script>
 <script src="/bower_components/owl.carousel/dist/owl.carousel.js"></script>
+<script src="/bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 <!-- build:js js/plugins.js -->
@@ -235,21 +236,7 @@
 <!-- endbuild -->
 <!-- build:js js/main.js -->
 <!-- modal js -->
-<script>
-var modal = document.getElementById('preview');
-var btn = document.getElementById("btn-preview");
-var span = document.getElementsByClassName("close")[0];
-btn.onclick = function() {
-    modal.style.display = "block";
-}
 
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "block";
-    }
-}
-</script>
 
 <!-- popover js -->
   <script>
