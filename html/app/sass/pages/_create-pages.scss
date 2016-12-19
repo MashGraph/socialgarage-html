@@ -1,42 +1,3 @@
-// // header
-// <<<<<<< HEAD
-// .nav-link {
-//   li a {
-//     color: $nav-color !important;
-//   }
-// }
-
-// .main-nav {
-//   border-bottom: 1px solid #eeeeee !important;
-// }
-
-// // footer
-// .social-pages {
-//   .details {
-//     .icon i {
-//       color: $nav-color !important;
-//     }
-
-//     span {
-//       color: $nav-color !important;
-//     }
-
-//     a {
-//       color: $foot-site !important;
-//     }
-//   }
-// }
-
-// .copy-pages {
-//   .copy-txt {
-//     font-size: 11px;
-//     padding-top: 10px;
-//   }
-
-//   .copy-links {
-//     a {
-//       color: $foot2-color !important;
-// =======
 .nav-link{
   li a {
     color: $nav-color!important;
@@ -67,30 +28,10 @@
   .copy-links {
     a {
       color: $foot2-color!important;
-// >>>>>>> ui/pages-update
       font-size: 11px;
     }
   }
 }
-
-// <<<<<<< HEAD
-// modal
-@media screen and (min-width: 768px) {
-  .modal-header {
-    a {
-      color: $nav-modal !important;
-    }
-
-    .btn {
-      background-color: transparent;
-      border-right: 1px solid #fff;
-    }
-
-    .navbar-form {
-      padding-left: 200px;
-    }
-
-// =======
 
 // modal
 @media screen and (min-width: 768px){
@@ -105,13 +46,10 @@
     .navbar-form {
       padding-left: 200px;
     }
-// >>>>>>> ui/pages-update
     .form-control {
       background-color: transparent;
       border: none;
     }
-// <<<<<<< HEAD
-
     input {
       border-left: 1px solid #fff;
       color: #999990;
@@ -137,29 +75,6 @@
       li {
         a {
           line-height: 0px !important;
-
-// =======
-    input {
-      border-left: 1px solid #fff;
-      color: #999990;
-      width: 100px!important;
-    }
-    .navbar-modal{
-      background-color: #000!important;
-      min-height: 50px!important;
-    }
-    .main-nav{
-      height: 51px!important;
-    }
-    .navbar-nav{
-      padding-left: 50px;
-      .active {
-        background-color: #e7e7e7;
-      }
-      li {
-        a {
-          line-height: 0px!important;
-// >>>>>>> ui/pages-update
           i {
             font-size: 18px;
             color: $nav-modal;
@@ -608,13 +523,9 @@
 
         .input-group-btn {
           font-size: 14px;
-
-          // border: 1px solid gray;
-
         }
 
         .preview {
-          // text-align: right;
           float: right;
           font-size: 12px;
           color: $main-color;
@@ -639,7 +550,6 @@
           }
 
           p {
-            // color: $main-color;
             text-align: center;
             font-size: 12.8px;
 
@@ -731,14 +641,6 @@
             }
           }
         }
-
-        // small {
-        //   font-size: 10px;
-        //   color: $main-color!important;
-        //   margin-top: 5px;
-        //   text-align: left;
-        // }
-
       }
     }
 
@@ -748,7 +650,6 @@
       color: $title-gray;
     }
   }
-=======
     margin-top: 50px;
     position: relative;
     text-align: center;
@@ -1038,7 +939,7 @@
                 font-size: 10px;
               }
             }
-          }
+          } //password strength
           .pass-err{
             font-size: 12px;
             color: #a5a5a5;
@@ -1156,13 +1057,7 @@
                     }
                   }
               }
-          }
-          // small {
-          //   font-size: 10px;
-          //   color: $main-color!important;
-          //   margin-top: 5px;
-          //   text-align: left;
-          // }
+          } //form-group
         }
 
       }
@@ -1174,5 +1069,4 @@
       }
 
     }
->>>>>>> ui/pages-update
 }
