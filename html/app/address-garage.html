@@ -92,7 +92,7 @@
                 </div>
               </div>
               <div class="form-group">
-                <a href="success-garage.html" class="btn btn-std">Create New Garage</a>
+                <a href="checkout-garage.html" class="btn btn-std">Create New Garage</a>
               </div>
               <p>By clicking this button, you are agreeing to the site’s <a>Privacy Policy</a> and <a>Terms and Conditions</a>.
             </form>
@@ -250,6 +250,26 @@
 <!-- modal js -->
 
 
+<script>
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "block";
+    }
+}
+function showFeat() {
+  document.getElementById('other-feature').style.display = "block";
+  document.getElementById('btn-feat').style.display = "none";
+}
+function showFeat2() {
+  document.getElementById('other-feature2').style.display = "block";
+  document.getElementById('btn-feat2').style.display = "none";
+}
+function showFeat3() {
+  document.getElementById('other-feature3').style.display = "block";
+  document.getElementById('btn-feat3').style.display = "none";
+}
+</script>
+
 <!-- popover js -->
   <script>
   $(document).ready(function(){
@@ -259,6 +279,7 @@
         return $('#popover-content').html();
       }
     });
+
   });
   </script>
 <script src="js/main.js"></script>

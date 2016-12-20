@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="/bower_components/fancybox/source/jquery.fancybox.css" />
   <link rel="stylesheet" href="/bower_components/video.js/dist/video-js.css" />
   <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.css" />
-  <link rel="stylesheet" href="/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.css" />
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css css/main.css -->
@@ -58,34 +57,29 @@
 <section>
     <div class="container">
       <div class="block-wrap">
-        <div class="create-garage">
-
-          <div class="row">
-            <div class="col-xs-4 col-sm-4 col-md-4">
-              <div class="big-icon">
-                <i class="fa fa-check-square-o" aria-hidden="true"></i>
-              </div>
+        <div class="checkout-wrap">
+          <div class="checkout">
+            <div class="selected-package">Premium Garage Package</div>
+            <p>Please review the details below. If you are happy with your selection,<br> you can now launch your garage!</p>
+            <hr>
+            <div class="info">
+              <b>GARAGE URL:</b> <div class="info-web">your-company.socialgarage.com</div>
             </div>
-            <div class="col-xs-4 col-sm-8 col-md-8">
-              <div class="content-side">
-                <h1>Success, your garage is all set up!</h1>
-                <p>Your garage has been successfully launched, you can continue customizing your profile and start inventing the future!</p>
-                <a href="success-garage.html" class="btn btn-std btn-left">Visit My Garage <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
-              </div>
+            <div class="info">
+              <b>OWNER EMAIL:</b> <div class="info-web">myname@your-company.socialgarage.com</div>
+            </div>
+            <a href="" class="preview2 btn btn-preview2" data-toggle="modal" data-target="#preview"> <b>Preview your Garage</b> <i class="fa fa-cloud-upload" aria-hidden="true"></i> </a>
+
+            <div class="total">
+              <div class="icon"><i class="fa fa-credit-card" aria-hidden="true"></i></div>
+              <div class="charge">Total charges = <b>$50.00 per month</b></div>
+            </div>
+            <div class="exp">
+              Subscription will expire on <b>October 10, 2017</b>
             </div>
           </div>
-          <!-- <div class="content-success">
-
-            <div class="big-icon">
-              <i class="fa fa-check-square-o" aria-hidden="true"></i>
-            </div>
-            <div class="content-side">
-              <h1>Success, your garage is all set up!</h1>
-              <p>Your garage has been successfully launched, you can continue customizing your profile and start inventing the future!</p>
-              <a href="success-garage.html" class="btn btn-std">Create New Garage</a>
-            </div>
-          </div> -->
-
+          <button class="btn btn-std">confirm and launch my garage</button>
+          <button class="btn btn-inverse"><b>cancel</b></button>
         </div>
       </div>
     </div>
@@ -151,6 +145,7 @@
 <!-- modal -->
 <div id="preview" class="modal fade" role="dialog">
   <div class="modal-dialog">
+
     <div class="modal-content">
       <div class="modal-header">
           <header>
@@ -217,7 +212,6 @@
 <script src="/bower_components/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
 <script src="/bower_components/video.js/dist/video.js"></script>
 <script src="/bower_components/owl.carousel/dist/owl.carousel.js"></script>
-<script src="/bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 <!-- build:js js/plugins.js -->
@@ -236,9 +230,15 @@
 <!-- endbuild -->
 <!-- build:js js/main.js -->
 <!-- modal js -->
-
-
 <script>
+var modal = document.getElementById('preview');
+var btn = document.getElementById("btn-preview");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "block";
